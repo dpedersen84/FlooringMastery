@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface ProductDao {
     
-    Product getProduct();
+    Product getProduct(String name);
     
     List<Product> getAllProducts();
 }
