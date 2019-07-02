@@ -5,7 +5,7 @@ import java.util.List;
 
 public interface TaxRateDao {
     
-    TaxRate getTaxRate();
+    TaxRate getTaxRate(String state);
     
     List<TaxRate> getAllTaxRates();
 }

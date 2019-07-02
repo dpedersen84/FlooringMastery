@@ -73,7 +73,7 @@ public class ProductFileDao implements ProductDao {
         try {
             scanner = new Scanner(new BufferedReader(new FileReader(path)));
         } catch (FileNotFoundException e) {
-            throw new FileStorageException("Could not load items.");
+            throw new FileStorageException("Could not load products.");
         }
 
         String currentLine;

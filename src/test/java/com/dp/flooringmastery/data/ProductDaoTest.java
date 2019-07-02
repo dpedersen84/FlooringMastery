@@ -2,10 +2,6 @@ package com.dp.flooringmastery.data;
 
 import com.dp.flooringmastery.models.Product;
 import java.util.List;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -13,22 +9,6 @@ public class ProductDaoTest {
     private ProductDao dao = new ProductFileDao("products-test.txt");
     
     public ProductDaoTest() {
-    }
-    
-    @BeforeClass
-    public static void setUpClass() {
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-    }
-    
-    @Before
-    public void setUp() {
-    }
-    
-    @After
-    public void tearDown() {
     }
 
     /**
