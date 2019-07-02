@@ -1,0 +1,5 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+120,Cruickshank-Reichel,IL,3.8,Seamless Resin,1725.00,1.75,3.75,3018.75,6468.75,355.78,9843.28
+121,Windler Murphy and Mraz,IA,2.8,Parquet,1975.00,1.75,2.25,3456.25,4443.75,217.25,8117.25
+122,Mante Cassin and Koss,IA,2.8,Subway Tile,2850.00,2.75,3.50,7837.50,9975.00,489.84,18302.34
+123,Herzog Connelly and Koelpin,MI,4.0,Shag Carpet,1350.00,2.50,4.75,3375.00,6412.50,391.50,10179.00

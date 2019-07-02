@@ -1,0 +1,15 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+586,Schultz VonRueden and Howell,MN,4.8,Concrete,725.00,2.25,5.25,1631.25,3806.25,258.28,5695.78
+587,Gusikowski and Sons,WI,5.8,Seamless Resin,850.00,1.75,3.75,1487.50,3187.50,268.81,4943.81
+588,Hamill-Greenholt,WI,5.8,Sisal Carpet,2725.00,2.75,3.75,7493.75,10218.75,1018.47,18730.97
+589,Douglas Bergstrom and Conroy,MO,3.3,Sisal Carpet,100.00,2.75,3.75,275.00,375.00,21.13,671.13
+590,Weissnat Ziemann and Mosciski,MN,4.8,Shag Carpet,1600.00,2.50,4.75,4000.00,7600.00,551.00,12151.00
+591,Walker-Swift,IA,2.8,Frieze Carpet,2725.00,3.00,2.00,8175.00,5450.00,374.69,13999.69
+592,Jacobson Haley and Lindgren,IA,2.8,Bamboo,475.00,2.75,4.25,1306.25,2018.75,91.44,3416.44
+593,Zemlak Bailey and Turner,NE,5.3,Frieze Carpet,3100.00,3.00,2.00,9300.00,6200.00,813.75,16313.75
+594,Von Swift and Wolff,MI,4.0,Marble,725.00,2.50,5.50,1812.50,3987.50,232.00,6032.00
+595,Hintz-Feeney,ND,3.3,Frieze Carpet,2600.00,3.00,2.00,7800.00,5200.00,422.50,13422.50
+596,Prosacco Kilback and Dickinson,IL,3.8,Plank,2350.00,1.50,2.25,3525.00,5287.50,330.47,9142.97
+597,Okuneva Gerlach and Crist,IA,2.8,Marble,2850.00,2.50,5.50,7125.00,15675.00,627.00,23427.00
+598,Cruickshank-Reichel,IL,3.8,Subway Tile,725.00,2.75,3.50,1993.75,2537.50,169.92,4701.17
+599,Daugherty Group,MO,3.3,Parquet,1725.00,1.75,2.25,3018.75,3881.25,224.25,7124.25

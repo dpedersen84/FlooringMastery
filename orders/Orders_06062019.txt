@@ -1,0 +1,8 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+668,Johnston Dickinson and Schroeder,MO,3.3,Parquet,1100.00,1.75,2.25,1925.00,2475.00,143.00,4543.00
+669,Padberg-Terry,MN,4.8,Linoleum,1975.00,2.00,5.00,3950.00,9875.00,656.69,14481.69
+670,Barrows-Cruickshank,IL,3.8,Ceramic Tile,2850.00,3.25,2.75,9262.50,7837.50,641.25,17741.25
+671,Blick Schimmel and Harber,SD,6.0,Plank,475.00,1.50,2.25,712.50,1068.75,106.88,1888.13
+672,Koss Ondricka and Boehm,SD,6.0,Concrete,225.00,2.25,5.25,506.25,1181.25,101.25,1788.75
+673,Beatty-Grant,IL,3.8,Subway Tile,1225.00,2.75,3.50,3368.75,4287.50,287.11,7943.36
+674,Wehner-Mertz,WI,5.8,Bamboo,2725.00,2.75,4.25,7493.75,11581.25,1096.81,20171.81

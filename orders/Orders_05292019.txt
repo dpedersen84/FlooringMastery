@@ -1,0 +1,5 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+600,Gleichner-Hudson,ND,3.3,Concrete,100.00,2.25,5.25,225.00,525.00,24.38,774.38
+601,Schulist and Sons,WI,5.8,Linoleum,1600.00,2.00,5.00,3200.00,8000.00,644.00,11844.00
+602,Pagac-Quitzon,WI,5.8,Subway Tile,1225.00,2.75,3.50,3368.75,4287.50,440.23,8096.48
+603,Weimann and Sons,MI,4.0,Bamboo,2975.00,2.75,4.25,8181.25,12643.75,833.00,21658.00

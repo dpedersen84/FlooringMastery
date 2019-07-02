@@ -5,16 +5,12 @@ import java.util.List;
 
 public interface OrderDao {
     
-    void add(Order order);
+    void add(Order order, String date, String folder) throws FileStorageException;
     
-    List<Order> findAll();
+    List<Order> findByDate(String date, String folder);
     
-    List<Order> findByDate();
+    boolean edit(int orderNumber, String date);
     
-    Order findById();
-    
-    boolean edit(Order order);
-    
-    boolean removeById(int id);
+    boolean delete(int orderNumber, String date, String folder) throws FileStorageException;
     
 }

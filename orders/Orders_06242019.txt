@@ -1,0 +1,17 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+803,Dooley Group,SD,6.0,Cork,3100.00,3.50,3.00,10850.00,9300.00,1209.00,21359.00
+804,Willms Rodriguez and Moore,MN,4.8,Linoleum,100.00,2.00,5.00,200.00,500.00,33.25,733.25
+805,Kessler Sipes and Lind,SD,6.0,Linoleum,600.00,2.00,5.00,1200.00,3000.00,252.00,4452.00
+806,Wisozk-Waters,IL,3.8,Frieze Carpet,1100.00,3.00,2.00,3300.00,2200.00,206.25,5706.25
+807,Douglas-Jenkins,MO,3.3,Ceramic Tile,725.00,3.25,2.75,2356.25,1993.75,141.38,4491.38
+808,Jakubowski Group,ND,3.3,Frieze Carpet,2100.00,3.00,2.00,6300.00,4200.00,341.25,10841.25
+809,Grant and Sons,MI,4.0,Linoleum,725.00,2.00,5.00,1450.00,3625.00,203.00,5278.00
+810,Fadel Nader and Lubowitz,MI,4.0,Shag Carpet,1225.00,2.50,4.75,3062.50,5818.75,355.25,9236.50
+811,Muller-Thompson,WI,5.8,Linoleum,2350.00,2.00,5.00,4700.00,11750.00,945.88,17395.88
+812,Graham-Hansen,ND,3.3,Ceramic Tile,1725.00,3.25,2.75,5606.25,4743.75,336.38,10686.38
+813,Bednar-Botsford,IA,2.8,Parquet,100.00,1.75,2.25,175.00,225.00,11.00,411.00
+814,Jakubowski Schmeler and Dicki,MI,4.0,Concrete,100.00,2.25,5.25,225.00,525.00,30.00,780.00
+815,Parisian Group,SD,6.0,Frieze Carpet,1975.00,3.00,2.00,5925.00,3950.00,592.50,10467.50
+816,Windler Group,MN,4.8,Subway Tile,1850.00,2.75,3.50,5087.50,6475.00,549.22,12111.72
+817,Nitzsche Nikolaus and Towne,WI,5.8,Slate,2850.00,4.25,4.75,12112.50,13537.50,1474.88,27124.88
+818,Kirlin Inc,MN,4.8,Concrete,1975.00,2.25,5.25,4443.75,10368.75,703.59,15516.09

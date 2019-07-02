@@ -1,0 +1,7 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+736,Wiza Hayes and Cartwright,IL,3.8,Sisal Carpet,600.00,2.75,3.75,1650.00,2250.00,146.25,4046.25
+737,Ziemann-Schmidt,ND,3.3,Seamless Resin,2225.00,1.75,3.75,3893.75,8343.75,397.72,12635.22
+738,Glover Inc,ND,3.3,Concrete,2225.00,2.25,5.25,5006.25,11681.25,542.34,17229.84
+739,Davis Kiehn and Stark,MI,4.0,Glass Tile,1475.00,1.50,2.50,2212.50,3687.50,236.00,6136.00
+740,Zulauf Inc,NE,5.3,Sisal Carpet,2475.00,2.75,3.75,6806.25,9281.25,844.59,16932.09
+741,Lockman-Nicolas,NE,5.3,Plank,2225.00,1.50,2.25,3337.50,5006.25,438.05,8781.80

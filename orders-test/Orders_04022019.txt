@@ -1,0 +1,25 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+11,Abbott King and Bergnaum,WI,5.8,Concrete,2975.00,2.25,5.25,6693.75,15618.75,1282.97,23595.47
+12,Hegmann-Grant,NE,5.3,Marble,725.00,2.50,5.50,1812.50,3987.50,304.50,6104.50
+13,Schowalter-Torphy,NE,5.3,Cork,100.00,3.50,3.00,350.00,300.00,34.13,684.13
+14,Emmerich and Sons,MN,4.8,Concrete,1225.00,2.25,5.25,2756.25,6431.25,436.41,9623.91
+15,Rippin Group,MO,3.3,Cork,1350.00,3.50,3.00,4725.00,4050.00,285.19,9060.19
+16,Will Inc,IA,2.8,Ceramic Tile,225.00,3.25,2.75,731.25,618.75,37.13,1387.13
+17,Krajcik and Sons,MI,4.0,Ceramic Tile,975.00,3.25,2.75,3168.75,2681.25,234.00,6084.00
+18,Jacobson and Sons,IL,3.8,Glass Tile,1475.00,1.50,2.50,2212.50,3687.50,221.25,6121.25
+19,Keeling-Emard,WI,5.8,Sisal Carpet,1350.00,2.75,3.75,3712.50,5062.50,504.56,9279.56
+20,O'Kon LLC,MI,4.0,Glass Tile,2225.00,1.50,2.50,3337.50,5562.50,356.00,9256.00
+21,Weissnat Ziemann and Mosciski,MN,4.8,Concrete,850.00,2.25,5.25,1912.50,4462.50,302.81,6677.81
+22,Boyle Group,IL,3.8,Concrete,975.00,2.25,5.25,2193.75,5118.75,274.22,7586.72
+23,Schimmel Simonis and Howell,NE,5.3,Glass Tile,475.00,1.50,2.50,712.50,1187.50,99.75,1999.75
+24,Langworth and Sons,MO,3.3,Shag Carpet,2225.00,2.50,4.75,5562.50,10568.75,524.27,16655.52
+25,Crooks-O'Kon,WI,5.8,Glass Tile,725.00,1.50,2.50,1087.50,1812.50,166.75,3066.75
+26,Wilderman Grant and Beier,WI,5.8,Plank,2725.00,1.50,2.25,4087.50,6131.25,587.58,10806.33
+27,Wehner-Spencer,WI,5.8,Subway Tile,975.00,2.75,3.50,2681.25,3412.50,350.39,6444.14
+28,Harris-Crist,WI,5.8,Marble,2975.00,2.50,5.50,7437.50,16362.50,1368.50,25168.50
+29,Parisian and Sons,MN,4.8,Cork,2225.00,3.50,3.00,7787.50,6675.00,686.97,15149.47
+30,Beatty-Beatty,MI,4.0,Linoleum,2725.00,2.00,5.00,5450.00,13625.00,763.00,19838.00
+31,Harber-Metz,MN,4.8,Marble,1975.00,2.50,5.50,4937.50,10862.50,750.50,16550.50
+32,Carroll-Deckow,MO,3.3,Linoleum,2100.00,2.00,5.00,4200.00,10500.00,477.75,15177.75
+33,Greenholt-Baumbach,WI,5.8,Concrete,975.00,2.25,5.25,2193.75,5118.75,420.47,7732.97
+34,Lueilwitz Inc,WI,5.8,Marble,725.00,2.50,5.50,1812.50,3987.50,333.50,6133.50

@@ -1,0 +1,4 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+467,Jakubowski LLC,MI,4.0,Glass Tile,2225.00,1.50,2.50,3337.50,5562.50,356.00,9256.00
+468,Konopelski Hyatt and Kunde,WI,5.8,Frieze Carpet,100.00,3.00,2.00,300.00,200.00,28.75,528.75
+469,Rohan-Johnston,SD,6.0,Bamboo,1975.00,2.75,4.25,5431.25,8393.75,829.50,14654.50

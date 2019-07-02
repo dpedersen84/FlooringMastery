@@ -1,0 +1,12 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+742,Lehner Osinski and Altenwerth,SD,6.0,Cork,2350.00,3.50,3.00,8225.00,7050.00,916.50,16191.50
+743,Blick Inc,MI,4.0,Concrete,2350.00,2.25,5.25,5287.50,12337.50,705.00,18330.00
+744,Ernser-Windler,MN,4.8,Subway Tile,1850.00,2.75,3.50,5087.50,6475.00,549.22,12111.72
+745,Jacobs-Mante,IL,3.8,Marble,2725.00,2.50,5.50,6812.50,14987.50,817.50,22617.50
+746,Wisoky and Sons,MI,4.0,Glass Tile,2975.00,1.50,2.50,4462.50,7437.50,476.00,12376.00
+747,Beier-Mosciski,SD,6.0,Bamboo,600.00,2.75,4.25,1650.00,2550.00,252.00,4452.00
+748,Koch Inc,NE,5.3,Parquet,1725.00,1.75,2.25,3018.75,3881.25,362.25,7262.25
+749,Altenwerth-Klein,IA,2.8,Linoleum,1100.00,2.00,5.00,2200.00,5500.00,211.75,7911.75
+750,Hartmann Kunze and Nolan,WI,5.8,Ceramic Tile,1350.00,3.25,2.75,4387.50,3712.50,465.75,8565.75
+751,Herzog-Predovic,ND,3.3,Parquet,3100.00,1.75,2.25,5425.00,6975.00,403.00,12803.00
+752,Walker LLC,IA,2.8,Seamless Resin,100.00,1.75,3.75,175.00,375.00,15.13,565.13

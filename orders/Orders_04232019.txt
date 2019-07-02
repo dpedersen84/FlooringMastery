@@ -1,0 +1,15 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+222,Schmidt Christiansen and Monahan,ND,3.3,Ceramic Tile,2350.00,3.25,2.75,7637.50,6462.50,458.25,14558.25
+223,Lebsack and Sons,NE,5.3,Glass Tile,2600.00,1.50,2.50,3900.00,6500.00,546.00,10946.00
+224,McClure LLC,MI,4.0,Concrete,2725.00,2.25,5.25,6131.25,14306.25,817.50,21255.00
+225,Wiza Stokes and Grimes,ND,3.3,Shag Carpet,1975.00,2.50,4.75,4937.50,9381.25,465.36,14784.11
+226,MacGyver Sipes and Hagenes,ND,3.3,Cork,2600.00,3.50,3.00,9100.00,7800.00,549.25,17449.25
+227,Steuber-O'Kon,MO,3.3,Marble,3100.00,2.50,5.50,7750.00,17050.00,806.00,25606.00
+228,Purdy Gleason and Waters,NE,5.3,Bamboo,2475.00,2.75,4.25,6806.25,10518.75,909.56,18234.56
+229,Douglas Bergstrom and Conroy,MO,3.3,Shag Carpet,2725.00,2.50,4.75,6812.50,12943.75,642.08,20398.33
+230,Ward Waelchi and Kirlin,NE,5.3,Sisal Carpet,2850.00,2.75,3.75,7837.50,10687.50,972.56,19497.56
+231,Blick Koelpin and Kub,MI,4.0,Frieze Carpet,1725.00,3.00,2.00,5175.00,3450.00,345.00,8970.00
+232,Gislason Inc,MO,3.3,Slate,100.00,4.25,4.75,425.00,475.00,29.25,929.25
+233,Waelchi Inc,IL,3.8,Marble,850.00,2.50,5.50,2125.00,4675.00,255.00,7055.00
+234,Cormier-Sporer,MN,4.8,Subway Tile,2350.00,2.75,3.50,6462.50,8225.00,697.66,15385.16
+235,Dach Group,IA,2.8,Frieze Carpet,850.00,3.00,2.00,2550.00,1700.00,116.88,4366.88

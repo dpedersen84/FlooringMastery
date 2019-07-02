@@ -1,0 +1,11 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+576,Goodwin Group,WI,5.8,Plank,2850.00,1.50,2.25,4275.00,6412.50,614.53,11302.03
+577,Adams-Rogahn,NE,5.3,Frieze Carpet,2975.00,3.00,2.00,8925.00,5950.00,780.94,15655.94
+578,Leffler Treutel and Goldner,MI,4.0,Linoleum,725.00,2.00,5.00,1450.00,3625.00,203.00,5278.00
+579,Sawayn-Mertz,MO,3.3,Seamless Resin,975.00,1.75,3.75,1706.25,3656.25,174.28,5536.78
+580,O'Keefe Inc,IL,3.8,Parquet,1350.00,1.75,2.25,2362.50,3037.50,202.50,5602.50
+581,Herzog Group,MN,4.8,Slate,1350.00,4.25,4.75,5737.50,6412.50,577.13,12727.13
+582,Russel Sipes and Lindgren,WI,5.8,Parquet,1975.00,1.75,2.25,3456.25,4443.75,454.25,8354.25
+583,Eichmann McCullough and Shanahan,NE,5.3,Subway Tile,850.00,2.75,3.50,2337.50,2975.00,278.91,5591.41
+584,Kris-Wisozk,ND,3.3,Plank,2725.00,1.50,2.25,4087.50,6131.25,332.11,10550.86
+585,Aufderhar-Satterfield,IL,3.8,Bamboo,1100.00,2.75,4.25,3025.00,4675.00,288.75,7988.75

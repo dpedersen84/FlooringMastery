@@ -1,0 +1,15 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+453,Boyle-Smith,WI,5.8,Subway Tile,100.00,2.75,3.50,275.00,350.00,35.94,660.94
+454,Wilderman-Jones,SD,6.0,Subway Tile,475.00,2.75,3.50,1306.25,1662.50,178.13,3146.88
+455,Kreiger Miller and Terry,WI,5.8,Sisal Carpet,2725.00,2.75,3.75,7493.75,10218.75,1018.47,18730.97
+456,Runolfsson Koss and Herman,MN,4.8,Glass Tile,850.00,1.50,2.50,1275.00,2125.00,161.50,3561.50
+457,Smith Group,SD,6.0,Concrete,1475.00,2.25,5.25,3318.75,7743.75,663.75,11726.25
+458,Thompson-McGlynn,IA,2.8,Sisal Carpet,1975.00,2.75,3.75,5431.25,7406.25,353.03,13190.53
+459,Jenkins and Sons,MI,4.0,Marble,100.00,2.50,5.50,250.00,550.00,32.00,832.00
+460,Ward Waelchi and Kirlin,NE,5.3,Slate,100.00,4.25,4.75,425.00,475.00,47.25,947.25
+461,McClure LLC,MI,4.0,Parquet,2225.00,1.75,2.25,3893.75,5006.25,356.00,9256.00
+462,Eichmann LLC,NE,5.3,Subway Tile,2975.00,2.75,3.50,8181.25,10412.50,976.17,19569.92
+463,Skiles and Sons,SD,6.0,Seamless Resin,725.00,1.75,3.75,1268.75,2718.75,239.25,4226.75
+464,Daugherty Group,MO,3.3,Parquet,2600.00,1.75,2.25,4550.00,5850.00,338.00,10738.00
+465,Crooks-Miller,WI,5.8,Parquet,100.00,1.75,2.25,175.00,225.00,23.00,423.00
+466,Harvey-Stracke,SD,6.0,Cork,2225.00,3.50,3.00,7787.50,6675.00,867.75,15330.25

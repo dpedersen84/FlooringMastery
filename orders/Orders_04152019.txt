@@ -1,0 +1,6 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+137,Ernser Group,IL,3.8,Marble,1350.00,2.50,5.50,3375.00,7425.00,405.00,11205.00
+138,Kuhlman Group,MO,3.3,Linoleum,100.00,2.00,5.00,200.00,500.00,22.75,722.75
+139,Feeney Herman and Osinski,IA,2.8,Frieze Carpet,2350.00,3.00,2.00,7050.00,4700.00,323.13,12073.13
+140,Bahringer MacGyver and Hilll,MI,4.0,Ceramic Tile,3100.00,3.25,2.75,10075.00,8525.00,744.00,19344.00
+141,Douglas Bergstrom and Conroy,MO,3.3,Concrete,2100.00,2.25,5.25,4725.00,11025.00,511.88,16261.88

@@ -1,0 +1,13 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+164,Waters-Hilpert,NE,5.3,Cork,2350.00,3.50,3.00,8225.00,7050.00,801.94,16076.94
+165,Donnelly Inc,IL,3.8,Linoleum,2100.00,2.00,5.00,4200.00,10500.00,551.25,15251.25
+166,Zulauf Group,NE,5.3,Marble,1350.00,2.50,5.50,3375.00,7425.00,567.00,11367.00
+167,Pfannerstill-Turner,MN,4.8,Parquet,1475.00,1.75,2.25,2581.25,3318.75,280.25,6180.25
+168,McClure-Treutel,ND,3.3,Bamboo,3100.00,2.75,4.25,8525.00,13175.00,705.25,22405.25
+169,Sporer Inc,MN,4.8,Cork,475.00,3.50,3.00,1662.50,1425.00,146.66,3234.16
+170,Prohaska Nienow and Cronin,NE,5.3,Cork,600.00,3.50,3.00,2100.00,1800.00,204.75,4104.75
+171,Hilpert Leannon and Koelpin,MN,4.8,Ceramic Tile,1850.00,3.25,2.75,6012.50,5087.50,527.25,11627.25
+172,Kub-Okuneva,ND,3.3,Parquet,1350.00,1.75,2.25,2362.50,3037.50,175.50,5575.50
+173,Windler Group,MN,4.8,Plank,1350.00,1.50,2.25,2025.00,3037.50,240.47,5302.97
+174,Huel Hegmann and McClure,MO,3.3,Glass Tile,600.00,1.50,2.50,900.00,1500.00,78.00,2478.00
+175,Balistreri Braun and Rutherford,WI,5.8,Shag Carpet,350.00,2.50,4.75,875.00,1662.50,145.91,2683.41

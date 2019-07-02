@@ -1,0 +1,17 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+819,Corkery-Turcotte,IA,2.8,Plank,725.00,1.50,2.25,1087.50,1631.25,74.77,2793.52
+820,Hilpert Smith and Smith,MN,4.8,Cork,975.00,3.50,3.00,3412.50,2925.00,301.03,6638.53
+821,Erdman Littel and Orn,NE,5.3,Parquet,975.00,1.75,2.25,1706.25,2193.75,204.75,4104.75
+822,Ortiz Inc,IA,2.8,Shag Carpet,2100.00,2.50,4.75,5250.00,9975.00,418.69,15643.69
+823,Waelchi Group,WI,5.8,Concrete,475.00,2.25,5.25,1068.75,2493.75,204.84,3767.34
+824,Kuvalis LLC,MI,4.0,Subway Tile,1725.00,2.75,3.50,4743.75,6037.50,431.25,11212.50
+825,Fahey Kris and Pfeffer,IL,3.8,Shag Carpet,1100.00,2.50,4.75,2750.00,5225.00,299.06,8274.06
+826,Gottlieb LLC,SD,6.0,Glass Tile,975.00,1.50,2.50,1462.50,2437.50,234.00,4134.00
+827,Haag LLC,MN,4.8,Linoleum,1225.00,2.00,5.00,2450.00,6125.00,407.31,8982.31
+828,Barrows-Cruickshank,IL,3.8,Frieze Carpet,1225.00,3.00,2.00,3675.00,2450.00,229.69,6354.69
+829,Haley-Kling,NE,5.3,Subway Tile,975.00,2.75,3.50,2681.25,3412.50,319.92,6413.67
+830,Sporer Inc,MN,4.8,Frieze Carpet,2475.00,3.00,2.00,7425.00,4950.00,587.81,12962.81
+831,Gutkowski Johns and Schmidt,IA,2.8,Glass Tile,2350.00,1.50,2.50,3525.00,5875.00,258.50,9658.50
+832,Halvorson-McKenzie,NE,5.3,Plank,3100.00,1.50,2.25,4650.00,6975.00,610.31,12235.31
+833,Howell Walker and Upton,NE,5.3,Concrete,1475.00,2.25,5.25,3318.75,7743.75,580.78,11643.28
+834,Hayes Shanahan and Homenick,IL,3.8,Seamless Resin,1600.00,1.75,3.75,2800.00,6000.00,330.00,9130.00

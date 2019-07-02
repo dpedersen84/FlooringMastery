@@ -1,0 +1,8 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+130,Pfannerstill and Sons,IA,2.8,Bamboo,2100.00,2.75,4.25,5775.00,8925.00,404.25,15104.25
+131,Leffler Zemlak and Kulas,MN,4.8,Plank,350.00,1.50,2.25,525.00,787.50,62.34,1374.84
+132,Sporer LLC,MO,3.3,Bamboo,2850.00,2.75,4.25,7837.50,12112.50,648.38,20598.38
+133,Homenick-Bogisich,ND,3.3,Sisal Carpet,2725.00,2.75,3.75,7493.75,10218.75,575.66,18288.16
+134,Anderson-Collins,SD,6.0,Concrete,1725.00,2.25,5.25,3881.25,9056.25,776.25,13713.75
+135,Kilback Abernathy and Kassulke,MO,3.3,Plank,1725.00,1.50,2.25,2587.50,3881.25,210.23,6678.98
+136,Schuppe LLC,MI,4.0,Marble,975.00,2.50,5.50,2437.50,5362.50,312.00,8112.00

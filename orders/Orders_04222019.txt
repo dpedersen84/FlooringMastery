@@ -1,0 +1,23 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+200,Williamson-Mueller,MO,3.3,Concrete,2100.00,2.25,5.25,4725.00,11025.00,511.88,16261.88
+201,Waters LLC,MI,4.0,Subway Tile,1225.00,2.75,3.50,3368.75,4287.50,306.25,7962.50
+202,Rempel Krajcik and Lind,NE,5.3,Seamless Resin,975.00,1.75,3.75,1706.25,3656.25,281.53,5644.03
+203,Johnson Wuckert and Champlin,MI,4.0,Ceramic Tile,3100.00,3.25,2.75,10075.00,8525.00,744.00,19344.00
+204,Bergnaum LLC,MN,4.8,Linoleum,2850.00,2.00,5.00,5700.00,14250.00,947.63,20897.63
+205,Greenholt-Baumbach,WI,5.8,Parquet,725.00,1.75,2.25,1268.75,1631.25,166.75,3066.75
+206,Donnelly Inc,IL,3.8,Bamboo,1600.00,2.75,4.25,4400.00,6800.00,420.00,11620.00
+207,Bechtelar-Konopelski,NE,5.3,Bamboo,350.00,2.75,4.25,962.50,1487.50,128.63,2578.63
+208,Dach Group,IA,2.8,Bamboo,1850.00,2.75,4.25,5087.50,7862.50,356.13,13306.13
+209,Armstrong Breitenberg and Hills,IA,2.8,Shag Carpet,350.00,2.50,4.75,875.00,1662.50,69.78,2607.28
+210,Batz LLC,IL,3.8,Linoleum,1725.00,2.00,5.00,3450.00,8625.00,452.81,12527.81
+211,Baumbach Schiller and Bayer,MI,4.0,Seamless Resin,2725.00,1.75,3.75,4768.75,10218.75,599.50,15587.00
+212,Hansen-Stehr,IA,2.8,Glass Tile,1225.00,1.50,2.50,1837.50,3062.50,134.75,5034.75
+213,Bode Sanford and Olson,MO,3.3,Subway Tile,1975.00,2.75,3.50,5431.25,6912.50,401.17,12744.92
+214,Ortiz Torphy and Fadel,IA,2.8,Shag Carpet,850.00,2.50,4.75,2125.00,4037.50,169.47,6331.97
+215,Jacobs-Mante,IL,3.8,Slate,1600.00,4.25,4.75,6800.00,7600.00,540.00,14940.00
+216,Walker Predovic and Kovacek,MN,4.8,Marble,1975.00,2.50,5.50,4937.50,10862.50,750.50,16550.50
+217,Turcotte and Sons,IA,2.8,Seamless Resin,1350.00,1.75,3.75,2362.50,5062.50,204.19,7629.19
+218,Huel-Cronin,IL,3.8,Shag Carpet,2600.00,2.50,4.75,6500.00,12350.00,706.88,19556.88
+219,Windler and Sons,MO,3.3,Frieze Carpet,2350.00,3.00,2.00,7050.00,4700.00,381.88,12131.88
+220,Buckridge Inc,IL,3.8,Plank,1725.00,1.50,2.25,2587.50,3881.25,242.58,6711.33
+221,Vandervort Reichel and Stiedemann,MI,4.0,Sisal Carpet,2100.00,2.75,3.75,5775.00,7875.00,546.00,14196.00

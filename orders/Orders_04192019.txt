@@ -1,0 +1,25 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+176,Larson Will and Wuckert,MI,4.0,Shag Carpet,725.00,2.50,4.75,1812.50,3443.75,210.25,5466.50
+177,Grant and Sons,MI,4.0,Subway Tile,725.00,2.75,3.50,1993.75,2537.50,181.25,4712.50
+178,Shanahan Schimmel and Boyle,IL,3.8,Bamboo,1725.00,2.75,4.25,4743.75,7331.25,452.81,12527.81
+179,Erdman Littel and Orn,NE,5.3,Concrete,1350.00,2.25,5.25,3037.50,7087.50,531.56,10656.56
+180,Haag LLC,MN,4.8,Plank,2350.00,1.50,2.25,3525.00,5287.50,418.59,9231.09
+181,Champlin Nienow and Murazik,MI,4.0,Linoleum,475.00,2.00,5.00,950.00,2375.00,133.00,3458.00
+182,Greenholt Inc,NE,5.3,Bamboo,850.00,2.75,4.25,2337.50,3612.50,312.38,6262.38
+183,Parisian Group,SD,6.0,Ceramic Tile,1100.00,3.25,2.75,3575.00,3025.00,396.00,6996.00
+184,Leannon-Okuneva,MO,3.3,Subway Tile,2100.00,2.75,3.50,5775.00,7350.00,426.56,13551.56
+185,Altenwerth-Hahn,MN,4.8,Concrete,1475.00,2.25,5.25,3318.75,7743.75,525.47,11587.97
+186,Hansen-Stehr,IA,2.8,Frieze Carpet,2100.00,3.00,2.00,6300.00,4200.00,288.75,10788.75
+187,Berge Schimmel and Botsford,ND,3.3,Glass Tile,1975.00,1.50,2.50,2962.50,4937.50,256.75,8156.75
+188,Howell-Ankunding,MI,4.0,Shag Carpet,1475.00,2.50,4.75,3687.50,7006.25,427.75,11121.50
+189,Lebsack and Sons,NE,5.3,Concrete,2350.00,2.25,5.25,5287.50,12337.50,925.31,18550.31
+190,Leannon-Casper,MO,3.3,Ceramic Tile,2350.00,3.25,2.75,7637.50,6462.50,458.25,14558.25
+191,Gulgowski Group,ND,3.3,Shag Carpet,600.00,2.50,4.75,1500.00,2850.00,141.38,4491.38
+192,Kris-Wisozk,ND,3.3,Cork,1600.00,3.50,3.00,5600.00,4800.00,338.00,10738.00
+193,Rosenbaum-Zemlak,IL,3.8,Shag Carpet,2975.00,2.50,4.75,7437.50,14131.25,808.83,22377.58
+194,Wilderman Heaney and Kris,ND,3.3,Marble,1225.00,2.50,5.50,3062.50,6737.50,318.50,10118.50
+195,Kuvalis-Borer,MI,4.0,Seamless Resin,2725.00,1.75,3.75,4768.75,10218.75,599.50,15587.00
+196,Russel Cole and Crona,SD,6.0,Slate,475.00,4.25,4.75,2018.75,2256.25,256.50,4531.50
+197,Wilderman-Torphy,WI,5.8,Frieze Carpet,2350.00,3.00,2.00,7050.00,4700.00,675.63,12425.63
+198,Mante-Cassin,MI,4.0,Cork,975.00,3.50,3.00,3412.50,2925.00,253.50,6591.00
+199,Gleichner Littel and Reichel,MN,4.8,Sisal Carpet,850.00,2.75,3.75,2337.50,3187.50,262.44,5787.44

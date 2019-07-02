@@ -1,0 +1,19 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+650,Johnson and Sons,MN,4.8,Marble,3100.00,2.50,5.50,7750.00,17050.00,1178.00,25978.00
+651,Marquardt-Hamill,WI,5.8,Subway Tile,2100.00,2.75,3.50,5775.00,7350.00,754.69,13879.69
+652,McCullough Muller and Bernier,MI,4.0,Subway Tile,1350.00,2.75,3.50,3712.50,4725.00,337.50,8775.00
+653,Kshlerin LLC,MN,4.8,Ceramic Tile,1475.00,3.25,2.75,4793.75,4056.25,420.38,9270.38
+654,Raynor Jones and Rutherford,MO,3.3,Plank,2350.00,1.50,2.25,3525.00,5287.50,286.41,9098.91
+655,Rempel and Sons,SD,6.0,Frieze Carpet,1225.00,3.00,2.00,3675.00,2450.00,367.50,6492.50
+656,Fadel Bogisich and Willms,ND,3.3,Cork,2350.00,3.50,3.00,8225.00,7050.00,496.44,15771.44
+657,Bergnaum LLC,MN,4.8,Slate,2600.00,4.25,4.75,11050.00,12350.00,1111.50,24511.50
+658,Witting LLC,NE,5.3,Subway Tile,850.00,2.75,3.50,2337.50,2975.00,278.91,5591.41
+659,Grimes-Wiza,WI,5.8,Parquet,2975.00,1.75,2.25,5206.25,6693.75,684.25,12584.25
+660,Rutherford Inc,WI,5.8,Slate,1475.00,4.25,4.75,6268.75,7006.25,763.31,14038.31
+661,Jaskolski and Sons,IL,3.8,Subway Tile,2100.00,2.75,3.50,5775.00,7350.00,492.19,13617.19
+662,Halvorson-McKenzie,NE,5.3,Seamless Resin,475.00,1.75,3.75,831.25,1781.25,137.16,2749.66
+663,Goodwin Lang and Ratke,NE,5.3,Marble,2475.00,2.50,5.50,6187.50,13612.50,1039.50,20839.50
+664,Haag LLC,MN,4.8,Ceramic Tile,475.00,3.25,2.75,1543.75,1306.25,135.38,2985.38
+665,Torp Russel and Hahn,IA,2.8,Marble,850.00,2.50,5.50,2125.00,4675.00,187.00,6987.00
+666,Lebsack Inc,NE,5.3,Parquet,1850.00,1.75,2.25,3237.50,4162.50,388.50,7788.50
+667,Christiansen and Sons,NE,5.3,Frieze Carpet,3100.00,3.00,2.00,9300.00,6200.00,813.75,16313.75

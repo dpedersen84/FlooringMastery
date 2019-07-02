@@ -1,0 +1,6 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+708,West Inc,MN,4.8,Subway Tile,1975.00,2.75,3.50,5431.25,6912.50,586.33,12930.08
+709,Rogahn-McGlynn,MO,3.3,Bamboo,2475.00,2.75,4.25,6806.25,10518.75,563.06,17888.06
+710,Kuhic Blick and Lubowitz,MN,4.8,Sisal Carpet,1975.00,2.75,3.75,5431.25,7406.25,609.78,13447.28
+711,Kassulke and Sons,MN,4.8,Concrete,2475.00,2.25,5.25,5568.75,12993.75,881.72,19444.22
+712,Carroll Group,WI,5.8,Ceramic Tile,1975.00,3.25,2.75,6418.75,5431.25,681.38,12531.38

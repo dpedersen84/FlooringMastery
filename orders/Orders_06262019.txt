@@ -1,0 +1,4 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+835,Marks Cruickshank and McGlynn,NE,5.3,Concrete,100.00,2.25,5.25,225.00,525.00,39.38,789.38
+836,Collier Group,ND,3.3,Marble,2225.00,2.50,5.50,5562.50,12237.50,578.50,18378.50
+837,Larson Will and Wuckert,MI,4.0,Marble,1225.00,2.50,5.50,3062.50,6737.50,392.00,10192.00

@@ -1,0 +1,24 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+713,Heidenreich-McGlynn,IL,3.8,Shag Carpet,1100.00,2.50,4.75,2750.00,5225.00,299.06,8274.06
+714,Abbott and Sons,ND,3.3,Bamboo,2725.00,2.75,4.25,7493.75,11581.25,619.94,19694.94
+715,Nader-Stoltenberg,MO,3.3,Sisal Carpet,1600.00,2.75,3.75,4400.00,6000.00,338.00,10738.00
+716,Bartell-Romaguera,MI,4.0,Plank,100.00,1.50,2.25,150.00,225.00,15.00,390.00
+717,Williamson Trantow and Franecki,NE,5.3,Seamless Resin,1975.00,1.75,3.75,3456.25,7406.25,570.28,11432.78
+718,Graham-Kuhn,ND,3.3,Glass Tile,2475.00,1.50,2.50,3712.50,6187.50,321.75,10221.75
+719,Rogahn Group,IL,3.8,Glass Tile,2350.00,1.50,2.50,3525.00,5875.00,352.50,9752.50
+720,Marvin Blanda and Aufderhar,MN,4.8,Frieze Carpet,350.00,3.00,2.00,1050.00,700.00,83.13,1833.13
+721,Hackett D'Amore and Borer,MI,4.0,Sisal Carpet,1850.00,2.75,3.75,5087.50,6937.50,481.00,12506.00
+722,Cormier-Sporer,MN,4.8,Glass Tile,1725.00,1.50,2.50,2587.50,4312.50,327.75,7227.75
+723,Wiza Koss and Howell,MO,3.3,Plank,100.00,1.50,2.25,150.00,225.00,12.19,387.19
+724,Kautzer and Sons,IA,2.8,Parquet,225.00,1.75,2.25,393.75,506.25,24.75,924.75
+725,Weimann and Sons,MI,4.0,Bamboo,2225.00,2.75,4.25,6118.75,9456.25,623.00,16198.00
+726,Brekke and Sons,IL,3.8,Glass Tile,2725.00,1.50,2.50,4087.50,6812.50,408.75,11308.75
+727,Douglas Bergstrom and Conroy,MO,3.3,Slate,100.00,4.25,4.75,425.00,475.00,29.25,929.25
+728,Mante-Cassin,MI,4.0,Seamless Resin,350.00,1.75,3.75,612.50,1312.50,77.00,2002.00
+729,Beer and Sons,MN,4.8,Seamless Resin,2475.00,1.75,3.75,4331.25,9281.25,646.59,14259.09
+730,Conn-Satterfield,IL,3.8,Seamless Resin,1850.00,1.75,3.75,3237.50,6937.50,381.56,10556.56
+731,Lynch Willms and Braun,MO,3.3,Marble,225.00,2.50,5.50,562.50,1237.50,58.50,1858.50
+732,Schmitt-Okuneva,MI,4.0,Cork,850.00,3.50,3.00,2975.00,2550.00,221.00,5746.00
+733,Von-Frami,ND,3.3,Linoleum,2850.00,2.00,5.00,5700.00,14250.00,648.38,20598.38
+734,Rogahn Group,WI,5.8,Seamless Resin,1475.00,1.75,3.75,2581.25,5531.25,466.47,8578.97
+735,Huel Hamill and Green,IL,3.8,Subway Tile,725.00,2.75,3.50,1993.75,2537.50,169.92,4701.17

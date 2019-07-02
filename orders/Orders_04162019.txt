@@ -1,0 +1,6 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+142,Shanahan Schimmel and Boyle,IL,3.8,Bamboo,2225.00,2.75,4.25,6118.75,9456.25,584.06,16159.06
+143,Wiza Stokes and Grimes,ND,3.3,Plank,1850.00,1.50,2.25,2775.00,4162.50,225.47,7162.97
+144,Kozey and Sons,ND,3.3,Concrete,1600.00,2.25,5.25,3600.00,8400.00,390.00,12390.00
+145,Bayer-Farrell,MN,4.8,Seamless Resin,1350.00,1.75,3.75,2362.50,5062.50,352.69,7777.69
+146,Runte Rowe and Nikolaus,MI,4.0,Shag Carpet,2600.00,2.50,4.75,6500.00,12350.00,754.00,19604.00

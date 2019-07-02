@@ -16,6 +16,9 @@ public class Order {
     private BigDecimal tax;
     private BigDecimal total; // materialCost + laborCost + tax
     
+    public Order() {
+    }
+    
     public Order(String customerName, String state, String productType, BigDecimal area) {
         this.customerName = customerName;
         this.state = state;

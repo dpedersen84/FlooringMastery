@@ -1,0 +1,16 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+243,Schmidt Christiansen and Monahan,ND,3.3,Parquet,2475.00,1.75,2.25,4331.25,5568.75,321.75,10221.75
+244,Douglas Bergstrom and Conroy,MO,3.3,Subway Tile,2600.00,2.75,3.50,7150.00,9100.00,528.13,16778.13
+245,Glover Inc,ND,3.3,Subway Tile,350.00,2.75,3.50,962.50,1225.00,71.09,2258.59
+246,Kassulke LLC,IL,3.8,Slate,2600.00,4.25,4.75,11050.00,12350.00,877.50,24277.50
+247,Waelchi Schroeder and Hettinger,IL,3.8,Plank,1350.00,1.50,2.25,2025.00,3037.50,189.84,5252.34
+248,Weissnat Ziemann and Mosciski,MN,4.8,Seamless Resin,1600.00,1.75,3.75,2800.00,6000.00,418.00,9218.00
+249,Ortiz Inc,IA,2.8,Concrete,1600.00,2.25,5.25,3600.00,8400.00,330.00,12330.00
+250,Rogahn Willms and Ledner,NE,5.3,Plank,1600.00,1.50,2.25,2400.00,3600.00,315.00,6315.00
+251,Lowe-Anderson,MN,4.8,Glass Tile,725.00,1.50,2.50,1087.50,1812.50,137.75,3037.75
+252,Schmitt-Dooley,MN,4.8,Concrete,975.00,2.25,5.25,2193.75,5118.75,347.34,7659.84
+253,Wilderman Grant and Beier,WI,5.8,Seamless Resin,225.00,1.75,3.75,393.75,843.75,71.16,1308.66
+254,Pfannerstill LLC,IA,2.8,Subway Tile,1350.00,2.75,3.50,3712.50,4725.00,232.03,8669.53
+255,Bauch LLC,SD,6.0,Slate,600.00,4.25,4.75,2550.00,2850.00,324.00,5724.00
+256,Durgan-Wisoky,MI,4.0,Concrete,2725.00,2.25,5.25,6131.25,14306.25,817.50,21255.00
+257,Douglas-Jenkins,MO,3.3,Parquet,1725.00,1.75,2.25,3018.75,3881.25,224.25,7124.25

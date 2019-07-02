@@ -1,0 +1,11 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,Parisian Group,WI,5.8,Slate,600.00,4.25,4.75,2550.00,2850.00,310.50,5710.50
+2,Prosacco-Jaskolski,ND,3.3,Sisal Carpet,2475.00,2.75,3.75,6806.25,9281.25,522.84,16610.34
+3,Hettinger-Baumbach,MN,4.8,Slate,475.00,4.25,4.75,2018.75,2256.25,203.06,4478.06
+4,Barrows Langosh and Fisher,SD,6.0,Bamboo,475.00,2.75,4.25,1306.25,2018.75,199.50,3524.50
+5,Tillman Hackett and Bogisich,ND,3.3,Cork,850.00,3.50,3.00,2975.00,2550.00,179.56,5704.56
+6,Beier-Mosciski,SD,6.0,Subway Tile,3100.00,2.75,3.50,8525.00,10850.00,1162.50,20537.50
+7,Connelly Lindgren and Gerlach,MN,4.8,Bamboo,2975.00,2.75,4.25,8181.25,12643.75,989.19,21814.19
+8,Von-Grant,NE,5.3,Parquet,2350.00,1.75,2.25,4112.50,5287.50,493.50,9893.50
+9,Kub-Okuneva,ND,3.3,Frieze Carpet,3100.00,3.00,2.00,9300.00,6200.00,503.75,16003.75
+10,Rolfson Inc,NE,5.3,Concrete,350.00,2.25,5.25,787.50,1837.50,137.81,2762.81

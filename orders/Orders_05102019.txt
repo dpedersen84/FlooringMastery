@@ -1,0 +1,8 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+433,Sanford Adams and Hand,WI,5.8,Concrete,1350.00,2.25,5.25,3037.50,7087.50,582.19,10707.19
+434,Kassulke LLC,IL,3.8,Sisal Carpet,1475.00,2.75,3.75,4056.25,5531.25,359.53,9947.03
+435,Bauch-Fay,IA,2.8,Ceramic Tile,725.00,3.25,2.75,2356.25,1993.75,119.63,4469.63
+436,McClure Kerluke and Ryan,IA,2.8,Bamboo,600.00,2.75,4.25,1650.00,2550.00,115.50,4315.50
+437,Shanahan Bins and Howe,IA,2.8,Seamless Resin,225.00,1.75,3.75,393.75,843.75,34.03,1271.53
+438,Daugherty Group,MO,3.3,Slate,1225.00,4.25,4.75,5206.25,5818.75,358.31,11383.31
+439,Larkin Schiller and Marks,MI,4.0,Parquet,600.00,1.75,2.25,1050.00,1350.00,96.00,2496.00

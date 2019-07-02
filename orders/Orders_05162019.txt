@@ -1,0 +1,20 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+470,Schneider-Gaylord,MO,3.3,Sisal Carpet,350.00,2.75,3.75,962.50,1312.50,73.94,2348.94
+471,Cummings Hayes and Little,NE,5.3,Cork,975.00,3.50,3.00,3412.50,2925.00,332.72,6670.22
+472,Kshlerin-Ritchie,MN,4.8,Shag Carpet,2225.00,2.50,4.75,5562.50,10568.75,766.23,16897.48
+473,Lowe-Kihn,IA,2.8,Slate,975.00,4.25,4.75,4143.75,4631.25,241.31,9016.31
+474,Doyle and Sons,SD,6.0,Concrete,2225.00,2.25,5.25,5006.25,11681.25,1001.25,17688.75
+475,Gusikowski and Sons,WI,5.8,Parquet,100.00,1.75,2.25,175.00,225.00,23.00,423.00
+476,Schmitt Inc,MI,4.0,Ceramic Tile,2475.00,3.25,2.75,8043.75,6806.25,594.00,15444.00
+477,Blick Schimmel and Harber,SD,6.0,Linoleum,1600.00,2.00,5.00,3200.00,8000.00,672.00,11872.00
+478,Grady-Nicolas,SD,6.0,Shag Carpet,2350.00,2.50,4.75,5875.00,11162.50,1022.25,18059.75
+479,Feeney Herman and Osinski,IA,2.8,Slate,350.00,4.25,4.75,1487.50,1662.50,86.63,3236.63
+480,Prosacco LLC,IA,2.8,Concrete,1850.00,2.25,5.25,4162.50,9712.50,381.56,14256.56
+481,Rice Lehner and Brown,MN,4.8,Linoleum,600.00,2.00,5.00,1200.00,3000.00,199.50,4399.50
+482,Abshire LLC,SD,6.0,Ceramic Tile,1225.00,3.25,2.75,3981.25,3368.75,441.00,7791.00
+483,Cruickshank-Stamm,IL,3.8,Subway Tile,3100.00,2.75,3.50,8525.00,10850.00,726.56,20101.56
+484,Mitchell LLC,MI,4.0,Shag Carpet,100.00,2.50,4.75,250.00,475.00,29.00,754.00
+485,Ortiz Torphy and Fadel,IA,2.8,Concrete,1975.00,2.25,5.25,4443.75,10368.75,407.34,15219.84
+486,Kiehn Vandervort and Oberbrunner,IA,2.8,Subway Tile,1850.00,2.75,3.50,5087.50,6475.00,317.97,11880.47
+487,Howell-Ziemann,ND,3.3,Ceramic Tile,2850.00,3.25,2.75,9262.50,7837.50,555.75,17655.75
+488,O'Reilly-McDermott,MI,4.0,Cork,850.00,3.50,3.00,2975.00,2550.00,221.00,5746.00

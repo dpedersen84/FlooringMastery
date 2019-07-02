@@ -1,0 +1,7 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+124,Cummings Feeney and Champlin,SD,6.0,Bamboo,850.00,2.75,4.25,2337.50,3612.50,357.00,6307.00
+125,Ryan Schoen and Gutkowski,MN,4.8,Plank,475.00,1.50,2.25,712.50,1068.75,84.61,1865.86
+126,West Inc,MN,4.8,Slate,2100.00,4.25,4.75,8925.00,9975.00,897.75,19797.75
+127,Robel LLC,MO,3.3,Shag Carpet,2975.00,2.50,4.75,7437.50,14131.25,700.98,22269.73
+128,MacGyver Sipes and Hagenes,ND,3.3,Concrete,2725.00,2.25,5.25,6131.25,14306.25,664.22,21101.72
+129,Kub-Kuhlman,SD,6.0,Parquet,1600.00,1.75,2.25,2800.00,3600.00,384.00,6784.00

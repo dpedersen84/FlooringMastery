@@ -1,0 +1,16 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+675,Greenholt-Baumbach,WI,5.8,Glass Tile,2725.00,1.50,2.50,4087.50,6812.50,626.75,11526.75
+676,Nienow Wiegand and Murazik,NE,5.3,Glass Tile,2975.00,1.50,2.50,4462.50,7437.50,624.75,12524.75
+677,Kshlerin and Sons,NE,5.3,Ceramic Tile,100.00,3.25,2.75,325.00,275.00,31.50,631.50
+678,Skiles Klocko and O'Reilly,ND,3.3,Seamless Resin,1225.00,1.75,3.75,2143.75,4593.75,218.97,6956.47
+679,Harris-McGlynn,SD,6.0,Subway Tile,100.00,2.75,3.50,275.00,350.00,37.50,662.50
+680,Armstrong LLC,IA,2.8,Parquet,1850.00,1.75,2.25,3237.50,4162.50,203.50,7603.50
+681,Casper LLC,IL,3.8,Parquet,350.00,1.75,2.25,612.50,787.50,52.50,1452.50
+682,Anderson-Collins,SD,6.0,Parquet,225.00,1.75,2.25,393.75,506.25,54.00,954.00
+683,MacGyver Sipes and Hagenes,ND,3.3,Parquet,225.00,1.75,2.25,393.75,506.25,29.25,929.25
+684,Wilderman Ledner and Schuster,WI,5.8,Parquet,2725.00,1.75,2.25,4768.75,6131.25,626.75,11526.75
+685,Kuvalis LLC,MI,4.0,Cork,2350.00,3.50,3.00,8225.00,7050.00,611.00,15886.00
+686,King Group,IL,3.8,Concrete,1475.00,2.25,5.25,3318.75,7743.75,414.84,11477.34
+687,Lueilwitz-Kozey,ND,3.3,Cork,1725.00,3.50,3.00,6037.50,5175.00,364.41,11576.91
+688,Ward LLC,MI,4.0,Subway Tile,1600.00,2.75,3.50,4400.00,5600.00,400.00,10400.00
+689,Treutel-Feest,NE,5.3,Sisal Carpet,1975.00,2.75,3.75,5431.25,7406.25,673.97,13511.47

@@ -1,0 +1,18 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+753,Jenkins Denesik and Rippin,WI,5.8,Frieze Carpet,1600.00,3.00,2.00,4800.00,3200.00,460.00,8460.00
+754,Mueller and Sons,WI,5.8,Cork,2850.00,3.50,3.00,9975.00,8550.00,1065.19,19590.19
+755,Schulist Rogahn and Kilback,SD,6.0,Parquet,2725.00,1.75,2.25,4768.75,6131.25,654.00,11554.00
+756,Kris-Wisozk,ND,3.3,Ceramic Tile,2225.00,3.25,2.75,7231.25,6118.75,433.88,13783.88
+757,Rowe Wiza and Bode,WI,5.8,Sisal Carpet,975.00,2.75,3.75,2681.25,3656.25,364.41,6701.91
+758,Eichmann LLC,NE,5.3,Bamboo,100.00,2.75,4.25,275.00,425.00,36.75,736.75
+759,Gislason Inc,MO,3.3,Concrete,1600.00,2.25,5.25,3600.00,8400.00,390.00,12390.00
+760,Adams Osinski and Mann,IA,2.8,Seamless Resin,1100.00,1.75,3.75,1925.00,4125.00,166.38,6216.38
+761,Beer and Sons,MN,4.8,Slate,1725.00,4.25,4.75,7331.25,8193.75,737.44,16262.44
+762,Parisian and Sons,MN,4.8,Glass Tile,2350.00,1.50,2.50,3525.00,5875.00,446.50,9846.50
+763,Stark Little and McKenzie,IA,2.8,Frieze Carpet,2975.00,3.00,2.00,8925.00,5950.00,409.06,15284.06
+764,Gislason-Ziemann,IL,3.8,Slate,1975.00,4.25,4.75,8393.75,9381.25,666.56,18441.56
+765,Kunde-Wilderman,SD,6.0,Parquet,1350.00,1.75,2.25,2362.50,3037.50,324.00,5724.00
+766,Grady-Stark,MN,4.8,Glass Tile,2725.00,1.50,2.50,4087.50,6812.50,517.75,11417.75
+767,Grimes Inc,ND,3.3,Shag Carpet,2100.00,2.50,4.75,5250.00,9975.00,494.81,15719.81
+768,Rice Lehner and Brown,MN,4.8,Ceramic Tile,725.00,3.25,2.75,2356.25,1993.75,206.63,4556.63
+769,Rosenbaum-Frami,NE,5.3,Glass Tile,850.00,1.50,2.50,1275.00,2125.00,178.50,3578.50

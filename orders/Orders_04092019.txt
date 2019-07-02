@@ -1,0 +1,7 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+114,Senger-Senger,WI,5.8,Sisal Carpet,1475.00,2.75,3.75,4056.25,5531.25,551.28,10138.78
+115,Kautzer and Sons,IA,2.8,Cork,1350.00,3.50,3.00,4725.00,4050.00,241.31,9016.31
+116,Willms Monahan and Jast,NE,5.3,Concrete,1850.00,2.25,5.25,4162.50,9712.50,728.44,14603.44
+117,Bosco-Hyatt,ND,3.3,Concrete,850.00,2.25,5.25,1912.50,4462.50,207.19,6582.19
+118,Johnston and Sons,MI,4.0,Ceramic Tile,2100.00,3.25,2.75,6825.00,5775.00,504.00,13104.00
+119,Blick Gutkowski and Gleichner,MO,3.3,Cork,975.00,3.50,3.00,3412.50,2925.00,205.97,6543.47

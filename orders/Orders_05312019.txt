@@ -1,0 +1,5 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+609,Ryan Inc,SD,6.0,Shag Carpet,1600.00,2.50,4.75,4000.00,7600.00,696.00,12296.00
+610,Bartell-Powlowski,MI,4.0,Parquet,2475.00,1.75,2.25,4331.25,5568.75,396.00,10296.00
+611,Johnston and Sons,SD,6.0,Bamboo,3100.00,2.75,4.25,8525.00,13175.00,1302.00,23002.00
+612,Bruen Bernier and Smith,IL,3.8,Marble,1725.00,2.50,5.50,4312.50,9487.50,517.50,14317.50
