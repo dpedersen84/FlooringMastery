@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class ProductDaoTest {
-    private ProductDao dao = new ProductFileDao("products-test.txt");
+    private ProductDao dao = new ProductFileDao("products.txt");
     
     public ProductDaoTest() {
     }

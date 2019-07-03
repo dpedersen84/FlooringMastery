@@ -55,6 +55,14 @@ public class OrderFileDao implements OrderDao {
             throws FileStorageException {
         List<Order> orders = this.findByDate(date, folder);
         
+//        Order remove = orders.stream()
+//                .filter(o -> o.getOrderNumber() == orderNumber)
+//                .findFirst()
+//                .orElse(null);
+//                
+//        
+//        return orders.remove(remove);
+        
         for (int i = 0; i < orders.size(); i++) {
             if (orders.get(i).getOrderNumber() == orderNumber) {
                 orders.remove(i);

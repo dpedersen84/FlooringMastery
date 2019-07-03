@@ -59,7 +59,7 @@ public class OrderDaoTest {
         testTotal = testTotal.setScale(2, RoundingMode.HALF_DOWN);
         testOrder.setTotal(testTotal);
 
-        dao.add(testOrder, "04012019", "orders-test");
+        dao.add(testOrder, "07022019", "orders-test");
 
     }
 
@@ -67,22 +67,23 @@ public class OrderDaoTest {
     public void testFindByDate() {
         List<Order> testList = dao.findByDate("04012019", "orders-test");
         
-        assertEquals(11, testList.size());  
+        assertEquals(9, testList.size());  
     }
 
 //    @Test
 //    public void testEditOrder() {
 //    }
-//    @Test
-//    public void testRemoveOrder() throws FileStorageException {
-//        List<Order> testList = dao.findByDate("04012019", "orders-test");
-//        
+    
+    @Test
+    public void testRemoveOrder() throws FileStorageException {
+        List<Order> testList = dao.findByDate("04012019", "orders-test");
+        
 //        int begSize = testList.size();
-//        
-//        assertTrue(dao.delete(10, "04012019", "orders-test"));
-//        
+        
+        assertTrue(dao.delete(1, "04012019", "orders-test"));
+        
 //        int endSize = testList.size();
 //        
 //        assertEquals(begSize, endSize + 1);
-//    }
+    }
 }
