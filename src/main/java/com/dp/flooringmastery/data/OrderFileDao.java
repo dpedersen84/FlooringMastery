@@ -26,6 +26,18 @@ public class OrderFileDao implements OrderDao {
     }
 
     @Override
+    public Order findById(int orderId, String date, String folder) {
+        List<Order> orders = findByDate(date, folder);
+        
+        for (Order i : orders) {
+            if (i.getOrderNumber() == orderId) {
+                return i;
+            }
+        }
+        return null;
+    }
+    
+    @Override
     public void add(Order order, String date, String folder) 
             throws FileStorageException {
         List<Order> orders = findByDate(date, folder);
@@ -46,22 +58,25 @@ public class OrderFileDao implements OrderDao {
     }
 
     @Override
-    public boolean edit(int orderNumber, String date) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public boolean edit(Order order, String date, String folder) 
+            throws FileStorageException {
+       
+        List<Order> orders = this.findByDate(date, folder);
+        
+        for (int i = 0; i < orders.size(); i++) {
+            if (orders.get(i).getOrderNumber() == order.getOrderNumber()) {
+                orders.set(i, order);
+                writeDatabase(orders, folder, date);
+                return true;
+            }
+        }
+        return false;
     }
 
     @Override
     public boolean delete(int orderNumber, String date, String folder) 
             throws FileStorageException {
         List<Order> orders = this.findByDate(date, folder);
-        
-//        Order remove = orders.stream()
-//                .filter(o -> o.getOrderNumber() == orderNumber)
-//                .findFirst()
-//                .orElse(null);
-//                
-//        
-//        return orders.remove(remove);
         
         for (int i = 0; i < orders.size(); i++) {
             if (orders.get(i).getOrderNumber() == orderNumber) {

@@ -79,6 +79,8 @@ public class ProductFileDao implements ProductDao {
         String currentLine;
         Product currentProduct;
 
+        scanner.nextLine(); // Remove header
+        
         while (scanner.hasNextLine()) {
             currentLine = scanner.nextLine();
             currentProduct = mapToProduct(currentLine);
