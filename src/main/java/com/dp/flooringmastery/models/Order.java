@@ -1,8 +1,10 @@
 package com.dp.flooringmastery.models;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 public class Order {
+    private LocalDate date;
     private int orderNumber;
     private String customerName;
     private String state;
@@ -26,6 +28,14 @@ public class Order {
         this.area = area;
     }
 
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+    
+    public LocalDate getDate() {
+        return date;
+    }
+    
     public int getOrderNumber() {
         return orderNumber;
     }

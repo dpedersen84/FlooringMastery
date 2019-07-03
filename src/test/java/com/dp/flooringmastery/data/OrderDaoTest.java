@@ -75,12 +75,12 @@ public class OrderDaoTest {
         BigDecimal testTax = (testOrder.getMaterialCost()
                 .add(testOrder.getLaborCost())).multiply(testOrder.getTaxRate()
                 .divide(new BigDecimal("100")));
-        testTax = testTax.setScale(2, RoundingMode.HALF_DOWN);
+        testTax = testTax.setScale(2, RoundingMode.HALF_UP);
         testOrder.setTax(testTax);
 
         BigDecimal testTotal = testOrder.getLaborCost()
                 .add(testOrder.getMaterialCost().add(testOrder.getTax()));
-        testTotal = testTotal.setScale(2, RoundingMode.HALF_DOWN);
+        testTotal = testTotal.setScale(2, RoundingMode.HALF_UP);
         testOrder.setTotal(testTotal);
 
         dao.add(testOrder, "07022019", "orders-test");
