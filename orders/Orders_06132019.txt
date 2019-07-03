@@ -1,0 +1,11 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+614,Daugherty Inc,MO,2.50,Seamless Resin,1100.00,2.75,2.75,3025.00,3025.00,151.25,6201.25
+615,Gleason Inc,MI,5.25,Plank,1975.00,2.50,4.25,4937.50,8393.75,699.89,14031.14
+616,Sawayn Group,NE,2.50,Parquet,2850.00,2.25,4.75,6412.50,13537.50,498.75,20448.75
+617,Prohaska Conn and Erdman,IL,2.50,Sisal Carpet,2100.00,2.75,3.75,5775.00,7875.00,341.25,13991.25
+618,Kunde Group,MI,5.25,Slate,100.00,3.50,3.75,350.00,375.00,38.06,763.06
+619,Gutkowski Johns and Schmidt,MI,5.25,Seamless Resin,2600.00,2.75,2.75,7150.00,7150.00,750.75,15050.75
+620,Ward Runolfsdottir and Heidenreich,MI,5.25,Bamboo,225.00,2.50,2.25,562.50,506.25,56.11,1124.86
+621,Marquardt-Little,SD,2.50,Ceramic Tile,1475.00,3.00,4.25,4425.00,6268.75,267.34,10961.09
+622,Herzog-Mayert,SD,2.50,Cork,225.00,3.25,4.75,731.25,1068.75,45.00,1845.00
+623,Klein Kunze and Beatty,SD,2.50,Ceramic Tile,2975.00,3.00,4.25,8925.00,12643.75,539.22,22107.97

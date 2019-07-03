@@ -1,5 +1,21 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-120,Cruickshank-Reichel,IL,3.8,Seamless Resin,1725.00,1.75,3.75,3018.75,6468.75,355.78,9843.28
-121,Windler Murphy and Mraz,IA,2.8,Parquet,1975.00,1.75,2.25,3456.25,4443.75,217.25,8117.25
-122,Mante Cassin and Koss,IA,2.8,Subway Tile,2850.00,2.75,3.50,7837.50,9975.00,489.84,18302.34
-123,Herzog Connelly and Koelpin,MI,4.0,Shag Carpet,1350.00,2.50,4.75,3375.00,6412.50,391.50,10179.00
+76,Beier-Mosciski,WI,6.75,Sisal Carpet,850.00,2.75,3.75,2337.50,3187.50,372.94,5897.94
+77,Kshlerin and Sons,SD,2.50,Parquet,1350.00,2.25,4.75,3037.50,6412.50,236.25,9686.25
+78,Boyle Group,MO,2.50,Concrete,725.00,2.00,5.50,1450.00,3987.50,135.94,5573.44
+79,Becker-Schaden,ND,2.50,Glass Tile,100.00,4.50,3.00,450.00,300.00,18.75,768.75
+80,Buckridge Inc,MN,5.00,Ceramic Tile,3100.00,3.00,4.25,9300.00,13175.00,1123.75,23598.75
+81,Wolf-Stehr,MI,5.25,Ceramic Tile,850.00,3.00,4.25,2550.00,3612.50,323.53,6486.03
+82,Vandervort Reichel and Stiedemann,MN,5.00,Linoleum,1350.00,1.75,4.00,2362.50,5400.00,388.13,8150.63
+83,Stanton Inc,ND,2.50,Seamless Resin,350.00,2.75,2.75,962.50,962.50,48.13,1973.13
+84,Grady-Stark,MN,5.00,Subway Tile,1850.00,2.75,5.50,5087.50,10175.00,763.13,16025.63
+85,Sipes Schumm and O'Keefe,MI,5.25,Marble,975.00,4.50,4.00,4387.50,3900.00,435.09,8722.59
+86,Abshire-Stehr,MO,2.50,Shag Carpet,2725.00,2.00,4.25,5450.00,11581.25,425.78,17457.03
+87,Pacocha Schmidt and Bogan,IA,6.50,Linoleum,1475.00,1.75,4.00,2581.25,5900.00,551.28,9032.53
+88,Williamson Inc,ND,2.50,Concrete,1850.00,2.00,5.50,3700.00,10175.00,346.88,14221.88
+89,Bayer-Farrell,NE,2.50,Glass Tile,225.00,4.50,3.00,1012.50,675.00,42.19,1729.69
+90,Schmitt-Okuneva,IL,2.50,Ceramic Tile,1225.00,3.00,4.25,3675.00,5206.25,222.03,9103.28
+91,West Bechtelar and Hudson,IA,6.50,Ceramic Tile,3100.00,3.00,4.25,9300.00,13175.00,1460.88,23935.88
+92,Armstrong LLC,MI,5.25,Sisal Carpet,1975.00,2.75,3.75,5431.25,7406.25,673.97,13511.47
+93,Kuphal LLC,MO,2.50,Plank,1225.00,2.50,4.25,3062.50,5206.25,206.72,8475.47
+94,Rolfson Group,MO,2.50,Shag Carpet,600.00,2.00,4.25,1200.00,2550.00,93.75,3843.75
+95,Rowe McLaughlin and Cronin,NE,2.50,Cork,100.00,3.25,4.75,325.00,475.00,20.00,820.00

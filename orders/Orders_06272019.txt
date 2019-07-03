@@ -1,8 +1,21 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-838,Wisozk-Waters,IL,3.8,Plank,1600.00,1.50,2.25,2400.00,3600.00,225.00,6225.00
-839,Schneider Bartoletti and Mann,IL,3.8,Subway Tile,1850.00,2.75,3.50,5087.50,6475.00,433.59,11996.09
-840,Dach LLC,MN,4.8,Frieze Carpet,2975.00,3.00,2.00,8925.00,5950.00,706.56,15581.56
-841,Weissnat Lemke and Wintheiser,SD,6.0,Cork,1100.00,3.50,3.00,3850.00,3300.00,429.00,7579.00
-842,Abbott Cummerata and Champlin,NE,5.3,Frieze Carpet,2600.00,3.00,2.00,7800.00,5200.00,682.50,13682.50
-843,Borer Oberbrunner and Armstrong,ND,3.3,Marble,2475.00,2.50,5.50,6187.50,13612.50,643.50,20443.50
-844,Nitzsche Nikolaus and Towne,WI,5.8,Seamless Resin,1850.00,1.75,3.75,3237.50,6937.50,585.06,10760.06
+712,Marvin Blanda and Aufderhar,NE,2.50,Sisal Carpet,725.00,2.75,3.75,1993.75,2718.75,117.81,4830.31
+713,Gusikowski and Sons,SD,2.50,Seamless Resin,2350.00,2.75,2.75,6462.50,6462.50,323.13,13248.13
+714,Legros-Farrell,WI,6.75,Subway Tile,2975.00,2.75,5.50,8181.25,16362.50,1656.70,26200.45
+715,Padberg-Terry,MO,2.50,Parquet,2725.00,2.25,4.75,6131.25,12943.75,476.88,19551.88
+716,Christiansen and Sons,NE,2.50,Linoleum,2725.00,1.75,4.00,4768.75,10900.00,391.72,16060.47
+717,Thiel Inc,NE,2.50,Concrete,850.00,2.00,5.50,1700.00,4675.00,159.38,6534.38
+718,Rath Inc,SD,2.50,Linoleum,600.00,1.75,4.00,1050.00,2400.00,86.25,3536.25
+719,Fadel LLC,SD,2.50,Bamboo,2975.00,2.50,2.25,7437.50,6693.75,353.28,14484.53
+720,Pacocha-Keebler,MN,5.00,Marble,1225.00,4.50,4.00,5512.50,4900.00,520.63,10933.13
+721,Runolfsdottir Langosh and Waelchi,MI,5.25,Seamless Resin,100.00,2.75,2.75,275.00,275.00,28.88,578.88
+722,Sporer-Leuschke,IL,2.50,Seamless Resin,1100.00,2.75,2.75,3025.00,3025.00,151.25,6201.25
+723,Casper-Rohan,IA,6.50,Seamless Resin,475.00,2.75,2.75,1306.25,1306.25,169.81,2782.31
+724,Willms Monahan and Jast,IA,6.50,Bamboo,1975.00,2.50,2.25,4937.50,4443.75,609.78,9991.03
+725,Gulgowski Group,MI,5.25,Parquet,2850.00,2.25,4.75,6412.50,13537.50,1047.38,20997.38
+726,Boyle Group,MO,2.50,Glass Tile,2600.00,4.50,3.00,11700.00,7800.00,487.50,19987.50
+727,Leannon-Okuneva,IA,6.50,Concrete,600.00,2.00,5.50,1200.00,3300.00,292.50,4792.50
+728,Considine Boehm and Wolf,MO,2.50,Sisal Carpet,975.00,2.75,3.75,2681.25,3656.25,158.44,6495.94
+729,Johnston LLC,MN,5.00,Subway Tile,2100.00,2.75,5.50,5775.00,11550.00,866.25,18191.25
+730,Mills Klocko and Botsford,NE,2.50,Subway Tile,1975.00,2.75,5.50,5431.25,10862.50,407.34,16701.09
+731,Nienow Inc,WI,6.75,Slate,350.00,3.50,3.75,1225.00,1312.50,171.28,2708.78

@@ -1,8 +1,11 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-668,Johnston Dickinson and Schroeder,MO,3.3,Parquet,1100.00,1.75,2.25,1925.00,2475.00,143.00,4543.00
-669,Padberg-Terry,MN,4.8,Linoleum,1975.00,2.00,5.00,3950.00,9875.00,656.69,14481.69
-670,Barrows-Cruickshank,IL,3.8,Ceramic Tile,2850.00,3.25,2.75,9262.50,7837.50,641.25,17741.25
-671,Blick Schimmel and Harber,SD,6.0,Plank,475.00,1.50,2.25,712.50,1068.75,106.88,1888.13
-672,Koss Ondricka and Boehm,SD,6.0,Concrete,225.00,2.25,5.25,506.25,1181.25,101.25,1788.75
-673,Beatty-Grant,IL,3.8,Subway Tile,1225.00,2.75,3.50,3368.75,4287.50,287.11,7943.36
-674,Wehner-Mertz,WI,5.8,Bamboo,2725.00,2.75,4.25,7493.75,11581.25,1096.81,20171.81
+536,Treutel Group,IL,2.50,Concrete,2975.00,2.00,5.50,5950.00,16362.50,557.81,22870.31
+537,Schmidt Williamson and Lubowitz,MO,2.50,Parquet,3100.00,2.25,4.75,6975.00,14725.00,542.50,22242.50
+538,Pfannerstill LLC,ND,2.50,Shag Carpet,1225.00,2.00,4.25,2450.00,5206.25,191.41,7847.66
+539,Gleason Ritchie and Cassin,MO,2.50,Parquet,2975.00,2.25,4.75,6693.75,14131.25,520.63,21345.63
+540,Deckow Group,IL,2.50,Subway Tile,975.00,2.75,5.50,2681.25,5362.50,201.09,8244.84
+541,Greenholt Inc,IL,2.50,Shag Carpet,850.00,2.00,4.25,1700.00,3612.50,132.81,5445.31
+542,Kemmer and Sons,WI,6.75,Bamboo,100.00,2.50,2.25,250.00,225.00,32.06,507.06
+543,Hilpert Leannon and Koelpin,ND,2.50,Plank,225.00,2.50,4.25,562.50,956.25,37.97,1556.72
+544,Gislason Quigley and Kiehn,IA,6.50,Subway Tile,225.00,2.75,5.50,618.75,1237.50,120.66,1976.91
+545,Glover Inc,MO,2.50,Seamless Resin,2100.00,2.75,2.75,5775.00,5775.00,288.75,11838.75

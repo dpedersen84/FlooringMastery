@@ -1,13 +1,4 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-396,Schuster-Hettinger,WI,5.8,Ceramic Tile,2975.00,3.25,2.75,9668.75,8181.25,1026.38,18876.38
-397,Gulgowski-Blick,SD,6.0,Shag Carpet,1725.00,2.50,4.75,4312.50,8193.75,750.38,13256.63
-398,Rosenbaum-Zemlak,IL,3.8,Linoleum,2350.00,2.00,5.00,4700.00,11750.00,616.88,17066.88
-399,Schmidt-Parker,WI,5.8,Slate,1100.00,4.25,4.75,4675.00,5225.00,569.25,10469.25
-400,Abbott-Mraz,WI,5.8,Bamboo,1725.00,2.75,4.25,4743.75,7331.25,694.31,12769.31
-401,Frami-Little,SD,6.0,Plank,1225.00,1.50,2.25,1837.50,2756.25,275.63,4869.38
-402,Ward Runolfsdottir and Heidenreich,SD,6.0,Cork,1850.00,3.50,3.00,6475.00,5550.00,721.50,12746.50
-403,Larson-Nitzsche,MO,3.3,Ceramic Tile,850.00,3.25,2.75,2762.50,2337.50,165.75,5265.75
-404,Gislason and Sons,NE,5.3,Subway Tile,2350.00,2.75,3.50,6462.50,8225.00,771.09,15458.59
-405,Herzog Connelly and Koelpin,MI,4.0,Slate,975.00,4.25,4.75,4143.75,4631.25,351.00,9126.00
-406,Ritchie and Sons,WI,5.8,Bamboo,1975.00,2.75,4.25,5431.25,8393.75,794.94,14619.94
-407,Russel Sipes and Lindgren,WI,5.8,Slate,1850.00,4.25,4.75,7862.50,8787.50,957.38,17607.38
+302,Fahey Kris and Pfeffer,IL,2.50,Glass Tile,1225.00,4.50,3.00,5512.50,3675.00,229.69,9417.19
+303,Langosh Deckow and Lubowitz,NE,2.50,Glass Tile,2600.00,4.50,3.00,11700.00,7800.00,487.50,19987.50
+304,Larson-Nitzsche,SD,2.50,Linoleum,1850.00,1.75,4.00,3237.50,7400.00,265.94,10903.44

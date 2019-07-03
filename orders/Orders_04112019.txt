@@ -1,7 +1,12 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-124,Cummings Feeney and Champlin,SD,6.0,Bamboo,850.00,2.75,4.25,2337.50,3612.50,357.00,6307.00
-125,Ryan Schoen and Gutkowski,MN,4.8,Plank,475.00,1.50,2.25,712.50,1068.75,84.61,1865.86
-126,West Inc,MN,4.8,Slate,2100.00,4.25,4.75,8925.00,9975.00,897.75,19797.75
-127,Robel LLC,MO,3.3,Shag Carpet,2975.00,2.50,4.75,7437.50,14131.25,700.98,22269.73
-128,MacGyver Sipes and Hagenes,ND,3.3,Concrete,2725.00,2.25,5.25,6131.25,14306.25,664.22,21101.72
-129,Kub-Kuhlman,SD,6.0,Parquet,1600.00,1.75,2.25,2800.00,3600.00,384.00,6784.00
+96,Wilkinson-Beer,MN,5.00,Shag Carpet,975.00,2.00,4.25,1950.00,4143.75,304.69,6398.44
+97,Schmidt Kassulke and Schulist,IA,6.50,Glass Tile,1225.00,4.50,3.00,5512.50,3675.00,597.19,9784.69
+98,Pacocha Schmidt and Bogan,IA,6.50,Shag Carpet,1100.00,2.00,4.25,2200.00,4675.00,446.88,7321.88
+99,Doyle and Sons,MO,2.50,Shag Carpet,2725.00,2.00,4.25,5450.00,11581.25,425.78,17457.03
+100,Blick Gutkowski and Gleichner,MO,2.50,Cork,475.00,3.25,4.75,1543.75,2256.25,95.00,3895.00
+101,Rempel Group,WI,6.75,Frieze Carpet,2100.00,4.25,3.00,8925.00,6300.00,1027.69,16252.69
+102,Rosenbaum-Keeling,WI,6.75,Parquet,350.00,2.25,4.75,787.50,1662.50,165.38,2615.38
+103,Lubowitz-Considine,IL,2.50,Frieze Carpet,1850.00,4.25,3.00,7862.50,5550.00,335.31,13747.81
+104,Cole Cummerata and Weber,MI,5.25,Linoleum,2100.00,1.75,4.00,3675.00,8400.00,633.94,12708.94
+105,Cormier-Hayes,IL,2.50,Frieze Carpet,1600.00,4.25,3.00,6800.00,4800.00,290.00,11890.00
+106,Stamm-Connelly,MN,5.00,Sisal Carpet,2975.00,2.75,3.75,8181.25,11156.25,966.88,20304.38

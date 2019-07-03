@@ -1,4 +1,16 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-705,Ernser-Schoen,NE,5.3,Plank,2725.00,1.50,2.25,4087.50,6131.25,536.48,10755.23
-706,Breitenberg Inc,ND,3.3,Seamless Resin,2850.00,1.75,3.75,4987.50,10687.50,509.44,16184.44
-707,Cummerata-Schaden,MN,4.8,Slate,1225.00,4.25,4.75,5206.25,5818.75,523.69,11548.69
+580,Nicolas-Wilkinson,MN,5.00,Slate,225.00,3.50,3.75,787.50,843.75,81.56,1712.81
+581,Crona Gulgowski and Legros,IL,2.50,Ceramic Tile,475.00,3.00,4.25,1425.00,2018.75,86.09,3529.84
+582,Cruickshank-Reichel,WI,6.75,Slate,2225.00,3.50,3.75,7787.50,8343.75,1088.86,17220.11
+583,Kunze-Heathcote,WI,6.75,Cork,100.00,3.25,4.75,325.00,475.00,54.00,854.00
+584,Ziemann McCullough and Schulist,MN,5.00,Cork,975.00,3.25,4.75,3168.75,4631.25,390.00,8190.00
+585,Hayes-Zieme,MI,5.25,Subway Tile,225.00,2.75,5.50,618.75,1237.50,97.45,1953.70
+586,Stokes Inc,MN,5.00,Frieze Carpet,725.00,4.25,3.00,3081.25,2175.00,262.81,5519.06
+587,Pacocha and Sons,WI,6.75,Frieze Carpet,3100.00,4.25,3.00,13175.00,9300.00,1517.06,23992.06
+588,Hartmann Kunze and Nolan,NE,2.50,Parquet,475.00,2.25,4.75,1068.75,2256.25,83.13,3408.13
+589,Connelly Lindgren and Gerlach,WI,6.75,Frieze Carpet,2350.00,4.25,3.00,9987.50,7050.00,1150.03,18187.53
+590,Johnston and Sons,IL,2.50,Slate,1475.00,3.50,3.75,5162.50,5531.25,267.34,10961.09
+591,Prosacco-Jaskolski,ND,2.50,Shag Carpet,975.00,2.00,4.25,1950.00,4143.75,152.34,6246.09
+592,Wilderman-Jones,NE,2.50,Linoleum,2475.00,1.75,4.00,4331.25,9900.00,355.78,14587.03
+593,Christiansen and Sons,NE,2.50,Seamless Resin,975.00,2.75,2.75,2681.25,2681.25,134.06,5496.56
+594,Steuber-O'Kon,SD,2.50,Shag Carpet,1975.00,2.00,4.25,3950.00,8393.75,308.59,12652.34

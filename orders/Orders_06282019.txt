@@ -1,10 +1,7 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-845,Lakin and Sons,ND,3.3,Shag Carpet,2600.00,2.50,4.75,6500.00,12350.00,612.63,19462.63
-846,Haley-Kling,NE,5.3,Parquet,2225.00,1.75,2.25,3893.75,5006.25,467.25,9367.25
-847,Breitenberg Hegmann and Purdy,IL,3.8,Seamless Resin,1225.00,1.75,3.75,2143.75,4593.75,252.66,6990.16
-848,Witting Haley and Hilll,ND,3.3,Glass Tile,2975.00,1.50,2.50,4462.50,7437.50,386.75,12286.75
-849,Waelchi Inc,IL,3.8,Glass Tile,225.00,1.50,2.50,337.50,562.50,33.75,933.75
-850,Botsford and Sons,MI,4.0,Glass Tile,2975.00,1.50,2.50,4462.50,7437.50,476.00,12376.00
-851,Fadel-Zemlak,NE,5.3,Concrete,725.00,2.25,5.25,1631.25,3806.25,285.47,5722.97
-852,Von-Frami,ND,3.3,Bamboo,1850.00,2.75,4.25,5087.50,7862.50,420.88,13370.88
-853,Dooley Group,SD,6.0,Marble,1475.00,2.50,5.50,3687.50,8112.50,708.00,12508.00
+732,Skiles-Farrell,NE,2.50,Cork,2975.00,3.25,4.75,9668.75,14131.25,595.00,24395.00
+733,Swift Inc,IA,6.50,Marble,1350.00,4.50,4.00,6075.00,5400.00,745.88,12220.88
+734,Wilderman-Torphy,ND,2.50,Seamless Resin,2350.00,2.75,2.75,6462.50,6462.50,323.13,13248.13
+735,Rohan-Johnston,MI,5.25,Glass Tile,1975.00,4.50,3.00,8887.50,5925.00,777.66,15590.16
+736,Parker Group,MN,5.00,Ceramic Tile,350.00,3.00,4.25,1050.00,1487.50,126.88,2664.38
+737,Brekke-Pfeffer,IL,2.50,Bamboo,2225.00,2.50,2.25,5562.50,5006.25,264.22,10832.97

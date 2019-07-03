@@ -1,0 +1,5 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+406,Gutkowski Lind and Howe,ND,2.50,Concrete,1225.00,2.00,5.50,2450.00,6737.50,229.69,9417.19
+407,Wilderman Grant and Beier,MN,5.00,Glass Tile,2725.00,4.50,3.00,12262.50,8175.00,1021.88,21459.38
+408,Wehner-Spencer,IA,6.50,Cork,225.00,3.25,4.75,731.25,1068.75,117.00,1917.00
+409,Beatty Inc,NE,2.50,Frieze Carpet,975.00,4.25,3.00,4143.75,2925.00,176.72,7245.47

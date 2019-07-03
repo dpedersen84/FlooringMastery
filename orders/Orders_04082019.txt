@@ -1,17 +1,14 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-98,Pollich Inc,IL,3.8,Parquet,3100.00,1.75,2.25,5425.00,6975.00,465.00,12865.00
-99,Koelpin Quigley and Boyle,MI,4.0,Ceramic Tile,1725.00,3.25,2.75,5606.25,4743.75,414.00,10764.00
-100,Johnson-O'Kon,IA,2.8,Seamless Resin,1350.00,1.75,3.75,2362.50,5062.50,204.19,7629.19
-101,Pfannerstill and Sons,IA,2.8,Concrete,725.00,2.25,5.25,1631.25,3806.25,149.53,5587.03
-102,Armstrong Breitenberg and Hills,IA,2.8,Shag Carpet,850.00,2.50,4.75,2125.00,4037.50,169.47,6331.97
-103,Ward LLC,MI,4.0,Plank,975.00,1.50,2.25,1462.50,2193.75,146.25,3802.50
-104,Cummings LLC,MI,4.0,Plank,2600.00,1.50,2.25,3900.00,5850.00,390.00,10140.00
-105,Kub-Okuneva,ND,3.3,Concrete,600.00,2.25,5.25,1350.00,3150.00,146.25,4646.25
-106,Johnson Wuckert and Champlin,MI,4.0,Subway Tile,1850.00,2.75,3.50,5087.50,6475.00,462.50,12025.00
-107,Medhurst Kessler and Kohler,MO,3.3,Marble,1350.00,2.50,5.50,3375.00,7425.00,351.00,11151.00
-108,Anderson Wiegand and Price,IA,2.8,Bamboo,1850.00,2.75,4.25,5087.50,7862.50,356.13,13306.13
-109,Harris-Heller,SD,6.0,Plank,2600.00,1.50,2.25,3900.00,5850.00,585.00,10335.00
-110,D'Amore O'Kon and Bailey,MI,4.0,Subway Tile,100.00,2.75,3.50,275.00,350.00,25.00,650.00
-111,Hintz Group,SD,6.0,Cork,225.00,3.50,3.00,787.50,675.00,87.75,1550.25
-112,Green McClure and Lebsack,WI,5.8,Frieze Carpet,3100.00,3.00,2.00,9300.00,6200.00,891.25,16391.25
-113,Schowalter Ortiz and Rice,MI,4.0,Shag Carpet,100.00,2.50,4.75,250.00,475.00,29.00,754.00
+43,Morar Ullrich and Walter,IL,2.50,Parquet,2100.00,2.25,4.75,4725.00,9975.00,367.50,15067.50
+44,Hegmann Kemmer and Schumm,MI,5.25,Frieze Carpet,1850.00,4.25,3.00,7862.50,5550.00,704.16,14116.66
+45,Wilkinson-Bartell,WI,6.75,Glass Tile,100.00,4.50,3.00,450.00,300.00,50.63,800.63
+46,Douglas-Murray,IA,6.50,Seamless Resin,2100.00,2.75,2.75,5775.00,5775.00,750.75,12300.75
+47,O'Reilly-McDermott,SD,2.50,Marble,1100.00,4.50,4.00,4950.00,4400.00,233.75,9583.75
+48,Mosciski Ullrich and Runte,MN,5.00,Shag Carpet,2975.00,2.00,4.25,5950.00,12643.75,929.69,19523.44
+49,Feil-Kling,MN,5.00,Shag Carpet,2100.00,2.00,4.25,4200.00,8925.00,656.25,13781.25
+50,Dicki-Wolff,MN,5.00,Cork,2975.00,3.25,4.75,9668.75,14131.25,1190.00,24990.00
+51,Lowe Group,IL,2.50,Bamboo,850.00,2.50,2.25,2125.00,1912.50,100.94,4138.44
+52,Kreiger Miller and Terry,MI,5.25,Parquet,1475.00,2.25,4.75,3318.75,7006.25,542.06,10867.06
+53,Harris-Hilpert,IL,2.50,Frieze Carpet,2100.00,4.25,3.00,8925.00,6300.00,380.63,15605.63
+54,Breitenberg Hegmann and Purdy,IA,6.50,Cork,3100.00,3.25,4.75,10075.00,14725.00,1612.00,26412.00
+55,Howell-Nicolas,MO,2.50,Marble,350.00,4.50,4.00,1575.00,1400.00,74.38,3049.38

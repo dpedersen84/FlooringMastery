@@ -1,20 +1,22 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-79,Bartell Hagenes and Collier,MO,3.3,Linoleum,1725.00,2.00,5.00,3450.00,8625.00,392.44,12467.44
-80,Gutkowski Johns and Schmidt,IA,2.8,Plank,1725.00,1.50,2.25,2587.50,3881.25,177.89,6646.64
-81,Wehner-Mertz,WI,5.8,Glass Tile,850.00,1.50,2.50,1275.00,2125.00,195.50,3595.50
-82,Brakus-Schiller,ND,3.3,Glass Tile,3100.00,1.50,2.50,4650.00,7750.00,403.00,12803.00
-83,Rogahn-Feil,IA,2.8,Concrete,2725.00,2.25,5.25,6131.25,14306.25,562.03,20999.53
-84,Conroy-Parisian,WI,5.8,Concrete,2350.00,2.25,5.25,5287.50,12337.50,1013.44,18638.44
-85,Rath and Sons,MI,4.0,Subway Tile,3100.00,2.75,3.50,8525.00,10850.00,775.00,20150.00
-86,Morar-Nitzsche,IA,2.8,Seamless Resin,2350.00,1.75,3.75,4112.50,8812.50,355.44,13280.44
-87,Sporer-Leuschke,NE,5.3,Glass Tile,2725.00,1.50,2.50,4087.50,6812.50,572.25,11472.25
-88,Wiza Stokes and Grimes,ND,3.3,Slate,475.00,4.25,4.75,2018.75,2256.25,138.94,4413.94
-89,Schmidt-Parker,WI,5.8,Plank,225.00,1.50,2.25,337.50,506.25,48.52,892.27
-90,Crona-Kulas,IL,3.8,Concrete,225.00,2.25,5.25,506.25,1181.25,63.28,1750.78
-91,Boehm-Sipes,MO,3.3,Seamless Resin,600.00,1.75,3.75,1050.00,2250.00,107.25,3407.25
-92,Leannon Skiles and Wuckert,IL,3.8,Marble,1850.00,2.50,5.50,4625.00,10175.00,555.00,15355.00
-93,Kris-Wisozk,ND,3.3,Seamless Resin,1850.00,1.75,3.75,3237.50,6937.50,330.69,10505.69
-94,Leffler Zemlak and Kulas,MN,4.8,Marble,350.00,2.50,5.50,875.00,1925.00,133.00,2933.00
-95,Douglas Group,IA,2.8,Shag Carpet,2100.00,2.50,4.75,5250.00,9975.00,418.69,15643.69
-96,Gulgowski-Pouros,SD,6.0,Frieze Carpet,1600.00,3.00,2.00,4800.00,3200.00,480.00,8480.00
-97,Skiles-Farrell,MO,3.3,Cork,975.00,3.50,3.00,3412.50,2925.00,205.97,6543.47
+22,Champlin Nienow and Murazik,MI,5.25,Slate,1475.00,3.50,3.75,5162.50,5531.25,561.42,11255.17
+23,Bruen-Daugherty,NE,2.50,Ceramic Tile,2475.00,3.00,4.25,7425.00,10518.75,448.59,18392.34
+24,Bruen-Ankunding,ND,2.50,Glass Tile,3100.00,4.50,3.00,13950.00,9300.00,581.25,23831.25
+25,Bogan Swift and McKenzie,IA,6.50,Marble,975.00,4.50,4.00,4387.50,3900.00,538.69,8826.19
+26,Rutherford Inc,ND,2.50,Cork,2725.00,3.25,4.75,8856.25,12943.75,545.00,22345.00
+27,Hansen-Stehr,WI,6.75,Ceramic Tile,2225.00,3.00,4.25,6675.00,9456.25,1088.86,17220.11
+28,Johnston and Sons,IL,2.50,Glass Tile,1100.00,4.50,3.00,4950.00,3300.00,206.25,8456.25
+29,Powlowski-Shields,WI,6.75,Slate,225.00,3.50,3.75,787.50,843.75,110.11,1741.36
+30,Howell-Ankunding,ND,2.50,Linoleum,1475.00,1.75,4.00,2581.25,5900.00,212.03,8693.28
+31,Metz Group,WI,6.75,Marble,100.00,4.50,4.00,450.00,400.00,57.38,907.38
+32,Beer Stoltenberg and Leuschke,ND,2.50,Parquet,600.00,2.25,4.75,1350.00,2850.00,105.00,4305.00
+33,Hilpert White and Satterfield,MI,5.25,Plank,725.00,2.50,4.25,1812.50,3081.25,256.92,5150.67
+34,Pfannerstill Gislason and Hackett,MI,5.25,Seamless Resin,725.00,2.75,2.75,1993.75,1993.75,209.34,4196.84
+35,Runte Smitham and Little,SD,2.50,Shag Carpet,2350.00,2.00,4.25,4700.00,9987.50,367.19,15054.69
+36,Muller Group,MI,5.25,Cork,2350.00,3.25,4.75,7637.50,11162.50,987.00,19787.00
+37,Rogahn-Feil,MN,5.00,Shag Carpet,350.00,2.00,4.25,700.00,1487.50,109.38,2296.88
+38,Cormier-Sporer,IA,6.50,Ceramic Tile,1225.00,3.00,4.25,3675.00,5206.25,577.28,9458.53
+39,Weissnat-Emmerich,IA,6.50,Bamboo,600.00,2.50,2.25,1500.00,1350.00,185.25,3035.25
+40,Shanahan Bins and Howe,NE,2.50,Concrete,2975.00,2.00,5.50,5950.00,16362.50,557.81,22870.31
+41,Howell-Ziemann,NE,2.50,Ceramic Tile,975.00,3.00,4.25,2925.00,4143.75,176.72,7245.47
+42,Gaylord-Bosco,NE,2.50,Subway Tile,350.00,2.75,5.50,962.50,1925.00,72.19,2959.69

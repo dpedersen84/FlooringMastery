@@ -1,7 +1,21 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-114,Senger-Senger,WI,5.8,Sisal Carpet,1475.00,2.75,3.75,4056.25,5531.25,551.28,10138.78
-115,Kautzer and Sons,IA,2.8,Cork,1350.00,3.50,3.00,4725.00,4050.00,241.31,9016.31
-116,Willms Monahan and Jast,NE,5.3,Concrete,1850.00,2.25,5.25,4162.50,9712.50,728.44,14603.44
-117,Bosco-Hyatt,ND,3.3,Concrete,850.00,2.25,5.25,1912.50,4462.50,207.19,6582.19
-118,Johnston and Sons,MI,4.0,Ceramic Tile,2100.00,3.25,2.75,6825.00,5775.00,504.00,13104.00
-119,Blick Gutkowski and Gleichner,MO,3.3,Cork,975.00,3.50,3.00,3412.50,2925.00,205.97,6543.47
+56,Paucek-Strosin,IA,6.50,Parquet,1350.00,2.25,4.75,3037.50,6412.50,614.25,10064.25
+57,Thiel LLC,MN,5.00,Bamboo,2100.00,2.50,2.25,5250.00,4725.00,498.75,10473.75
+58,Lowe-Kihn,NE,2.50,Linoleum,1975.00,1.75,4.00,3456.25,7900.00,283.91,11640.16
+59,Kulas and Sons,NE,2.50,Linoleum,1225.00,1.75,4.00,2143.75,4900.00,176.09,7219.84
+60,Schmidt Kassulke and Schulist,IA,6.50,Linoleum,850.00,1.75,4.00,1487.50,3400.00,317.69,5205.19
+61,Walker Predovic and Kovacek,MI,5.25,Linoleum,1850.00,1.75,4.00,3237.50,7400.00,558.47,11195.97
+62,Rempel Group,WI,6.75,Marble,1350.00,4.50,4.00,6075.00,5400.00,774.56,12249.56
+63,Gusikowski Wuckert and Hamill,MI,5.25,Slate,1475.00,3.50,3.75,5162.50,5531.25,561.42,11255.17
+64,Kovacek LLC,NE,2.50,Parquet,1475.00,2.25,4.75,3318.75,7006.25,258.13,10583.13
+65,Cormier Group,MO,2.50,Seamless Resin,850.00,2.75,2.75,2337.50,2337.50,116.88,4791.88
+66,Williamson-Mueller,NE,2.50,Parquet,600.00,2.25,4.75,1350.00,2850.00,105.00,4305.00
+67,Vandervort Reichel and Stiedemann,MN,5.00,Ceramic Tile,225.00,3.00,4.25,675.00,956.25,81.56,1712.81
+68,Homenick-Bogisich,WI,6.75,Seamless Resin,2475.00,2.75,2.75,6806.25,6806.25,918.84,14531.34
+69,Parisian Group,MI,5.25,Slate,2225.00,3.50,3.75,7787.50,8343.75,846.89,16978.14
+70,Jakubowski Schmeler and Dicki,MI,5.25,Slate,1850.00,3.50,3.75,6475.00,6937.50,704.16,14116.66
+71,Graham-Hansen,ND,2.50,Bamboo,100.00,2.50,2.25,250.00,225.00,11.88,486.88
+72,Jakubowski Schmeler and Dicki,MI,5.25,Frieze Carpet,1600.00,4.25,3.00,6800.00,4800.00,609.00,12209.00
+73,Emard-Hilll,NE,2.50,Plank,975.00,2.50,4.25,2437.50,4143.75,164.53,6745.78
+74,Beier-Williamson,ND,2.50,Plank,225.00,2.50,4.25,562.50,956.25,37.97,1556.72
+75,Balistreri and Sons,IL,2.50,Ceramic Tile,2975.00,3.00,4.25,8925.00,12643.75,539.22,22107.97

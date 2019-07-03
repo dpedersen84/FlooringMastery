@@ -1,25 +1,8 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-35,Waelchi Schroeder and Hettinger,IL,3.8,Shag Carpet,2225.00,2.50,4.75,5562.50,10568.75,604.92,16736.17
-36,Kovacek LLC,NE,5.3,Frieze Carpet,1725.00,3.00,2.00,5175.00,3450.00,452.81,9077.81
-37,DuBuque Group,ND,3.3,Frieze Carpet,2975.00,3.00,2.00,8925.00,5950.00,483.44,15358.44
-38,Hamill-Greenholt,WI,5.8,Frieze Carpet,475.00,3.00,2.00,1425.00,950.00,136.56,2511.56
-39,Greenholt-Baumbach,WI,5.8,Seamless Resin,1475.00,1.75,3.75,2581.25,5531.25,466.47,8578.97
-40,Feil Ullrich and Barrows,IL,3.8,Marble,975.00,2.50,5.50,2437.50,5362.50,292.50,8092.50
-41,Schulist Rogahn and Kilback,SD,6.0,Bamboo,1225.00,2.75,4.25,3368.75,5206.25,514.50,9089.50
-42,Yost Blick and Greenfelder,MO,3.3,Bamboo,1600.00,2.75,4.25,4400.00,6800.00,364.00,11564.00
-43,Williamson-Mueller,MO,3.3,Plank,1725.00,1.50,2.25,2587.50,3881.25,210.23,6678.98
-44,Marquardt-Little,MI,4.0,Bamboo,2600.00,2.75,4.25,7150.00,11050.00,728.00,18928.00
-45,Wiza Koss and Howell,MO,3.3,Cork,2975.00,3.50,3.00,10412.50,8925.00,628.47,19965.97
-46,Christiansen and Sons,NE,5.3,Marble,2975.00,2.50,5.50,7437.50,16362.50,1249.50,25049.50
-47,Prosacco-Jaskolski,ND,3.3,Sisal Carpet,975.00,2.75,3.75,2681.25,3656.25,205.97,6543.47
-48,Zulauf Group,NE,5.3,Concrete,2100.00,2.25,5.25,4725.00,11025.00,826.88,16576.88
-49,Altenwerth-Klein,IA,2.8,Frieze Carpet,850.00,3.00,2.00,2550.00,1700.00,116.88,4366.88
-50,Walsh Brekke and Hegmann,SD,6.0,Frieze Carpet,1225.00,3.00,2.00,3675.00,2450.00,367.50,6492.50
-51,Walker LLC,IA,2.8,Seamless Resin,1850.00,1.75,3.75,3237.50,6937.50,279.81,10454.81
-52,Johns Langosh and Barton,MI,4.0,Frieze Carpet,725.00,3.00,2.00,2175.00,1450.00,145.00,3770.00
-53,Hilpert Smith and Smith,MN,4.8,Cork,2100.00,3.50,3.00,7350.00,6300.00,648.38,14298.38
-54,Koelpin-Hudson,SD,6.0,Ceramic Tile,2225.00,3.25,2.75,7231.25,6118.75,801.00,14151.00
-55,Turcotte Harris and Pfeffer,IA,2.8,Concrete,2600.00,2.25,5.25,5850.00,13650.00,536.25,20036.25
-56,Konopelski Inc,SD,6.0,Cork,2225.00,3.50,3.00,7787.50,6675.00,867.75,15330.25
-57,Herzog-Predovic,ND,3.3,Shag Carpet,3100.00,2.50,4.75,7750.00,14725.00,730.44,23205.44
-58,Stanton-Hagenes,IL,3.8,Parquet,1975.00,1.75,2.25,3456.25,4443.75,296.25,8196.25
+13,Rutherford Inc,ND,2.50,Sisal Carpet,1850.00,2.75,3.75,5087.50,6937.50,300.63,12325.63
+14,Quitzon Group,ND,2.50,Bamboo,1975.00,2.50,2.25,4937.50,4443.75,234.53,9615.78
+15,Lubowitz-Gleichner,ND,2.50,Bamboo,1850.00,2.50,2.25,4625.00,4162.50,219.69,9007.19
+16,Huel Hegmann and McClure,IA,6.50,Shag Carpet,2100.00,2.00,4.25,4200.00,8925.00,853.13,13978.13
+17,Smitham Group,NE,2.50,Parquet,350.00,2.25,4.75,787.50,1662.50,61.25,2511.25
+18,Sauer-Schinner,SD,2.50,Ceramic Tile,100.00,3.00,4.25,300.00,425.00,18.13,743.13
+19,Beier-Mosciski,WI,6.75,Marble,850.00,4.50,4.00,3825.00,3400.00,487.69,7712.69

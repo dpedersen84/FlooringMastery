@@ -1,8 +1,9 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-236,Feeney Herman and Osinski,IA,2.8,Marble,725.00,2.50,5.50,1812.50,3987.50,159.50,5959.50
-237,Greenfelder-Kub,MN,4.8,Concrete,350.00,2.25,5.25,787.50,1837.50,124.69,2749.69
-238,Bauch LLC,ND,3.3,Parquet,725.00,1.75,2.25,1268.75,1631.25,94.25,2994.25
-239,Hagenes-Lemke,NE,5.3,Parquet,1975.00,1.75,2.25,3456.25,4443.75,414.75,8314.75
-240,Walter-Bogisich,MN,4.8,Shag Carpet,2725.00,2.50,4.75,6812.50,12943.75,938.42,20694.67
-241,Runolfsson-Effertz,ND,3.3,Cork,475.00,3.50,3.00,1662.50,1425.00,100.34,3187.84
-242,Leffler Zemlak and Kulas,MN,4.8,Seamless Resin,3100.00,1.75,3.75,5425.00,11625.00,809.88,17859.88
+189,Orn and Sons,MN,5.00,Sisal Carpet,350.00,2.75,3.75,962.50,1312.50,113.75,2388.75
+190,Larkin Schiller and Marks,ND,2.50,Glass Tile,1225.00,4.50,3.00,5512.50,3675.00,229.69,9417.19
+191,Reinger-Lynch,WI,6.75,Glass Tile,1725.00,4.50,3.00,7762.50,5175.00,873.28,13810.78
+192,Little Group,MI,5.25,Frieze Carpet,2475.00,4.25,3.00,10518.75,7425.00,942.05,18885.80
+193,Blick Schimmel and Harber,IL,2.50,Cork,1225.00,3.25,4.75,3981.25,5818.75,245.00,10045.00
+194,Bergstrom Upton and Pollich,MI,5.25,Parquet,850.00,2.25,4.75,1912.50,4037.50,312.38,6262.38
+195,Grant and Sons,SD,2.50,Frieze Carpet,600.00,4.25,3.00,2550.00,1800.00,108.75,4458.75
+196,Blick Inc,IA,6.50,Marble,1975.00,4.50,4.00,8887.50,7900.00,1091.19,17878.69

@@ -1,0 +1,8 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+738,Dooley Howell and Hudson,IL,2.50,Concrete,1100.00,2.00,5.50,2200.00,6050.00,206.25,8456.25
+739,Runolfsson-Auer,IL,2.50,Linoleum,350.00,1.75,4.00,612.50,1400.00,50.31,2062.81
+740,Hagenes-Marquardt,MN,5.00,Subway Tile,2350.00,2.75,5.50,6462.50,12925.00,969.38,20356.88
+741,Grimes-Wiza,MN,5.00,Frieze Carpet,2975.00,4.25,3.00,12643.75,8925.00,1078.44,22647.19
+742,Mosciski Ullrich and Runte,MN,5.00,Slate,2100.00,3.50,3.75,7350.00,7875.00,761.25,15986.25
+743,Parker-Lehner,IL,2.50,Linoleum,2100.00,1.75,4.00,3675.00,8400.00,301.88,12376.88
+744,Kub Thiel and Pacocha,MI,5.25,Cork,1850.00,3.25,4.75,6012.50,8787.50,777.00,15577.00

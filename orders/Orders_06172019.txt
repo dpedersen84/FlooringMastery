@@ -1,7 +1,15 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-736,Wiza Hayes and Cartwright,IL,3.8,Sisal Carpet,600.00,2.75,3.75,1650.00,2250.00,146.25,4046.25
-737,Ziemann-Schmidt,ND,3.3,Seamless Resin,2225.00,1.75,3.75,3893.75,8343.75,397.72,12635.22
-738,Glover Inc,ND,3.3,Concrete,2225.00,2.25,5.25,5006.25,11681.25,542.34,17229.84
-739,Davis Kiehn and Stark,MI,4.0,Glass Tile,1475.00,1.50,2.50,2212.50,3687.50,236.00,6136.00
-740,Zulauf Inc,NE,5.3,Sisal Carpet,2475.00,2.75,3.75,6806.25,9281.25,844.59,16932.09
-741,Lockman-Nicolas,NE,5.3,Plank,2225.00,1.50,2.25,3337.50,5006.25,438.05,8781.80
+624,Hermiston-Reichert,MO,2.50,Parquet,2475.00,2.25,4.75,5568.75,11756.25,433.13,17758.13
+625,Reichert Brown and Schmidt,IL,2.50,Subway Tile,2725.00,2.75,5.50,7493.75,14987.50,562.03,23043.28
+626,Gaylord-Towne,IA,6.50,Slate,100.00,3.50,3.75,350.00,375.00,47.13,772.13
+627,Roberts-Bosco,ND,2.50,Marble,725.00,4.50,4.00,3262.50,2900.00,154.06,6316.56
+628,Kovacek LLC,NE,2.50,Frieze Carpet,1350.00,4.25,3.00,5737.50,4050.00,244.69,10032.19
+629,Purdy Pfannerstill and Hodkiewicz,SD,2.50,Frieze Carpet,600.00,4.25,3.00,2550.00,1800.00,108.75,4458.75
+630,Ryan Inc,SD,2.50,Linoleum,2850.00,1.75,4.00,4987.50,11400.00,409.69,16797.19
+631,Altenwerth-Klein,NE,2.50,Bamboo,1475.00,2.50,2.25,3687.50,3318.75,175.16,7181.41
+632,Tillman Hackett and Bogisich,NE,2.50,Concrete,2725.00,2.00,5.50,5450.00,14987.50,510.94,20948.44
+633,Jacobson Haley and Lindgren,NE,2.50,Sisal Carpet,1725.00,2.75,3.75,4743.75,6468.75,280.31,11492.81
+634,O'Connell Wolff and Schmitt,MO,2.50,Slate,225.00,3.50,3.75,787.50,843.75,40.78,1672.03
+635,Rowe McLaughlin and Cronin,NE,2.50,Frieze Carpet,2975.00,4.25,3.00,12643.75,8925.00,539.22,22107.97
+636,Mosciski Ullrich and Runte,MN,5.00,Parquet,350.00,2.25,4.75,787.50,1662.50,122.50,2572.50
+637,Connelly-Effertz,MN,5.00,Frieze Carpet,1975.00,4.25,3.00,8393.75,5925.00,715.94,15034.69

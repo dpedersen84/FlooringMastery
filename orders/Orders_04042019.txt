@@ -1,21 +1,3 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-59,Shanahan-Moore,ND,3.3,Concrete,1850.00,2.25,5.25,4162.50,9712.50,450.94,14325.94
-60,Waelchi Schroeder and Hettinger,IL,3.8,Parquet,725.00,1.75,2.25,1268.75,1631.25,108.75,3008.75
-61,Kub-Dicki,SD,6.0,Linoleum,2600.00,2.00,5.00,5200.00,13000.00,1092.00,19292.00
-62,Jacobs-Mante,IL,3.8,Plank,600.00,1.50,2.25,900.00,1350.00,84.38,2334.38
-63,Russel Sipes and Lindgren,WI,5.8,Sisal Carpet,3100.00,2.75,3.75,8525.00,11625.00,1158.63,21308.63
-64,Rowe Wiza and Bode,WI,5.8,Ceramic Tile,3100.00,3.25,2.75,10075.00,8525.00,1069.50,19669.50
-65,Marvin Blanda and Aufderhar,MN,4.8,Subway Tile,725.00,2.75,3.50,1993.75,2537.50,215.23,4746.48
-66,Langosh Deckow and Lubowitz,IA,2.8,Parquet,3100.00,1.75,2.25,5425.00,6975.00,341.00,12741.00
-67,Nader LLC,MN,4.8,Plank,2975.00,1.50,2.25,4462.50,6693.75,529.92,11686.17
-68,Powlowski-Shields,IA,2.8,Subway Tile,2975.00,2.75,3.50,8181.25,10412.50,511.33,19105.08
-69,Wilkinson-Beer,MN,4.8,Sisal Carpet,850.00,2.75,3.75,2337.50,3187.50,262.44,5787.44
-70,Koch Bartoletti and Leuschke,MN,4.8,Plank,475.00,1.50,2.25,712.50,1068.75,84.61,1865.86
-71,Kub Thiel and Pacocha,MO,3.3,Cork,1225.00,3.50,3.00,4287.50,3675.00,258.78,8221.28
-72,Johns Langosh and Barton,MI,4.0,Slate,225.00,4.25,4.75,956.25,1068.75,81.00,2106.00
-73,Metz Group,MO,3.3,Subway Tile,2725.00,2.75,3.50,7493.75,9537.50,553.52,17584.77
-74,Wilderman-Torphy,WI,5.8,Concrete,3100.00,2.25,5.25,6975.00,16275.00,1336.88,24586.88
-75,Armstrong Breitenberg and Hills,IA,2.8,Concrete,1475.00,2.25,5.25,3318.75,7743.75,304.22,11366.72
-76,Reinger Ernser and Denesik,IA,2.8,Ceramic Tile,2225.00,3.25,2.75,7231.25,6118.75,367.13,13717.13
-77,Doyle and Sons,SD,6.0,Linoleum,1975.00,2.00,5.00,3950.00,9875.00,829.50,14654.50
-78,Conroy-Parisian,WI,5.8,Marble,2850.00,2.50,5.50,7125.00,15675.00,1311.00,24111.00
+20,Swift Inc,IA,6.50,Frieze Carpet,225.00,4.25,3.00,956.25,675.00,106.03,1737.28
+21,Larson and Sons,MO,2.50,Ceramic Tile,1975.00,3.00,4.25,5925.00,8393.75,357.97,14676.72
