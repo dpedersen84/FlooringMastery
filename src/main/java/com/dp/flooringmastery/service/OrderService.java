@@ -3,9 +3,7 @@ package com.dp.flooringmastery.service;
 import com.dp.flooringmastery.data.FileStorageException;
 import com.dp.flooringmastery.data.OrderDao;
 import com.dp.flooringmastery.data.ProductDao;
-import com.dp.flooringmastery.data.ProductFileDao;
 import com.dp.flooringmastery.data.TaxRateDao;
-import com.dp.flooringmastery.data.TaxRateFileDao;
 import com.dp.flooringmastery.models.Order;
 import com.dp.flooringmastery.models.Product;
 import com.dp.flooringmastery.models.TaxRate;
@@ -15,11 +13,13 @@ import java.util.List;
 public class OrderService {
 
     OrderDao orderDao;
-    ProductDao productDao = new ProductFileDao("Products.txt");
-    TaxRateDao taxRateDao = new TaxRateFileDao("Taxes.txt");
+    ProductDao productDao;
+    TaxRateDao taxRateDao;
 
-    public OrderService(OrderDao orderDao) {
+    public OrderService(OrderDao orderDao, ProductDao productDao, TaxRateDao taxRateDao) {
         this.orderDao = orderDao;
+        this.productDao = productDao;
+        this.taxRateDao = taxRateDao;
     }
 
     public Result<Order> addOrder(Order order) {
@@ -102,5 +102,14 @@ public class OrderService {
         }
 
         return result;
+    }
+    
+    public List<Order> findByDate(String date, String folder) {
+        return orderDao.findByDate(date, folder);
+    }
+    
+    public boolean deleteOrder(int orderNumber, String date, String folder) 
+            throws FileStorageException {
+        return orderDao.delete(orderNumber, date, folder);
     }
 }

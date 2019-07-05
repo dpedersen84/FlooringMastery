@@ -1,5 +1,6 @@
 package com.dp.flooringmastery.service;
 
+import com.dp.flooringmastery.data.FileStorageException;
 import com.dp.flooringmastery.data.OrderDao;
 import com.dp.flooringmastery.data.OrderFileDao;
 import com.dp.flooringmastery.data.ProductDao;
@@ -15,8 +16,11 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.AfterAll;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -34,7 +38,7 @@ public class OrderServiceTest {
     TaxRateDao taxRateDao = new TaxRateFileDao("Taxes.txt");
     ProductDao productDao = new ProductFileDao("Products.txt");
     
-    OrderService service = new OrderService(dao);
+    OrderService service = new OrderService(dao, productDao, taxRateDao);
 
     @BeforeAll
     public static void init() throws IOException {
@@ -45,28 +49,6 @@ public class OrderServiceTest {
         Files.copy(source, destinationTwo, StandardCopyOption.REPLACE_EXISTING);
     }
 
-    public OrderServiceTest() {
-    }
-
-    @BeforeAll
-    public static void setUpClass() {
-    }
-
-    @AfterAll
-    public static void tearDownClass() {
-    }
-
-    @BeforeEach
-    public void setUp() {
-    }
-
-    @AfterEach
-    public void tearDown() {
-    }
-
-    /**
-     * Test of addOrder method, of class OrderService.
-     */
     @Test
     public void testAddOrder() {
         Order newOrder = new Order();
@@ -80,5 +62,22 @@ public class OrderServiceTest {
         newOrder.setArea(new BigDecimal("100.00"));
         service.addOrder(newOrder);
     }
-
+    
+    @Test
+    public void testFindByDate() {
+        String date = "04032019";
+        String folder = "orders-test";
+        
+        List<Order> testOrders = service.findByDate(date, folder);
+        
+        assertEquals(4, testOrders.size());
+    }
+    
+    @Test
+    public void testDeleteOrder() throws FileStorageException {
+        String date = "04012019";
+        String folder = "orders-test";
+        
+        assertTrue(service.deleteOrder(1, date, folder));
+    }
 }
