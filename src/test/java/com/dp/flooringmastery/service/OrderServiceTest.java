@@ -17,11 +17,8 @@ import java.nio.file.StandardCopyOption;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.AfterAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
@@ -35,9 +32,9 @@ public class OrderServiceTest {
 
     OrderDao dao = new OrderFileDao(path);
 
-    TaxRateDao taxRateDao = new TaxRateFileDao("Taxes.txt");
-    ProductDao productDao = new ProductFileDao("Products.txt");
-    
+    TaxRateDao taxRateDao = new TaxRateFileDao();
+    ProductDao productDao = new ProductFileDao();
+
     OrderService service = new OrderService(dao, productDao, taxRateDao);
 
     @BeforeAll
@@ -50,11 +47,11 @@ public class OrderServiceTest {
     }
 
     @Test
-    public void testAddOrder() {
+    public void testAddOrder() throws FileStorageException {
         Order newOrder = new Order();
         LocalDate ld = LocalDate.now();
         ld = LocalDate.parse("04012019", DateTimeFormatter.ofPattern("MMddyyyy"));
-        
+
         newOrder.setDate(ld);
         newOrder.setCustomerName("Service Company");
         newOrder.setState("MN");
@@ -62,22 +59,24 @@ public class OrderServiceTest {
         newOrder.setArea(new BigDecimal("100.00"));
         service.addOrder(newOrder);
     }
-    
+
     @Test
-    public void testFindByDate() {
-        String date = "04032019";
+    public void testFindByDate() throws FileStorageException {
         String folder = "orders-test";
-        
-        List<Order> testOrders = service.findByDate(date, folder);
-        
-        assertEquals(4, testOrders.size());
+        LocalDate ld = LocalDate.now();
+        ld = LocalDate.parse("2019-04-01");
+
+        List<Order> testOrders = service.findByDate(ld, folder);
+
+        assertEquals(3, testOrders.size());
     }
-    
+
     @Test
     public void testDeleteOrder() throws FileStorageException {
-        String date = "04012019";
         String folder = "orders-test";
+        LocalDate ld = LocalDate.now();
+        ld = LocalDate.parse("2019-04-01");
         
-        assertTrue(service.deleteOrder(1, date, folder));
+        assertTrue(service.deleteOrder(1, ld, folder));
     }
 }

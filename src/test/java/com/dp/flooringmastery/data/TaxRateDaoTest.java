@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TaxRateDaoTest {
 
-    private TaxRateDao dao = new TaxRateFileDao("Taxes.txt");
+    private TaxRateDao dao = new TaxRateFileDao();
 
     public TaxRateDaoTest() {
     }

@@ -10,6 +10,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -25,8 +27,8 @@ public class OrderDaoTest {
 
     OrderDao dao = new OrderFileDao(path);
     
-    TaxRateDao taxRateDao = new TaxRateFileDao("Taxes.txt");
-    ProductDao productDao = new ProductFileDao("Products.txt");
+    TaxRateDao taxRateDao = new TaxRateFileDao();
+    ProductDao productDao = new ProductFileDao();
 
     @BeforeAll
     public static void init() throws IOException {
@@ -35,13 +37,6 @@ public class OrderDaoTest {
         Path destinationTwo = Paths.get(DATA_FILE_TWO);
         Files.copy(source, destination, StandardCopyOption.REPLACE_EXISTING);
         Files.copy(source, destinationTwo, StandardCopyOption.REPLACE_EXISTING);
-    }
-
-    @Test
-    public void testFindById() {
-        Order foundOrder = dao.findById(3, "04012019", "orders-test");
-
-        assertNotNull(foundOrder);
     }
 
     @Test
@@ -87,8 +82,16 @@ public class OrderDaoTest {
     }
 
     @Test
-    public void testFindByDate() {
-        List<Order> testList = dao.findByDate("04012019", "orders-test");
+    public void testFindByDate() throws FileStorageException {
+        LocalDate ld = LocalDate.now();
+        ld = LocalDate.parse("2015-01-01");
+        
+        ld = LocalDate.parse("04/01/2019", DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        String isoDate = ld.toString();
+        ld = LocalDate.parse(isoDate);
+        String formatted = ld.format(DateTimeFormatter.ofPattern("MMddyyyy"));
+        
+        List<Order> testList = dao.findByDate(formatted, "orders-test");
 
         assertEquals(4, testList.size());
     }
