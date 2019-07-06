@@ -8,6 +8,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -21,25 +23,17 @@ public class OrderFileDao implements OrderDao {
     
     public String path = "orders/";
     
+    public OrderFileDao() {
+    }
+    
     public OrderFileDao(String path) {
         this.path = path;
-    }
-
-    @Override
-    public Order findById(int orderId, String date, String folder) {
-        List<Order> orders = findByDate(date, folder);
-        
-        for (Order i : orders) {
-            if (i.getOrderNumber() == orderId) {
-                return i;
-            }
-        }
-        return null;
     }
     
     @Override
     public void add(Order order, String date, String folder) 
             throws FileStorageException {
+        
         List<Order> orders = findByDate(date, folder);
         
         orders.add(order);
@@ -175,5 +169,12 @@ public class OrderFileDao implements OrderDao {
         }
         out.close();
     }
-    
+
+    private String turnDateToString(LocalDate date) {
+        LocalDate ld = LocalDate.now();
+        String stringDate = ld.toString();
+        ld = LocalDate.parse(stringDate, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        String formatted = ld.format(DateTimeFormatter.ofPattern("MMddyyyy"));
+        return formatted;
+    }
 }
