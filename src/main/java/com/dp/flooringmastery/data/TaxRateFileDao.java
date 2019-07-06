@@ -18,9 +18,9 @@ public class TaxRateFileDao implements TaxRateDao {
 
     String path = "Taxes.txt";
 
-    public TaxRateFileDao(String path) {
-        this.path = path;
-    }
+//    public TaxRateFileDao(String path) {
+//        this.path = path;
+//    }
 
     @Override
     public TaxRate getTaxRate(String state) {

@@ -21,9 +21,9 @@ public class ProductFileDao implements ProductDao {
 
     String path = "products.txt";
 
-    public ProductFileDao(String path) {
-        this.path = path;
-    }
+//    public ProductFileDao(String path) {
+//        this.path = path;
+//    }
 
     @Override
     public Product getProduct(String name) {
