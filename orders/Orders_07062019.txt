@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,Blue Diamond,MN,5.00,Slate,100,3.50,3.75,350.00,375.00,36.25,761.25

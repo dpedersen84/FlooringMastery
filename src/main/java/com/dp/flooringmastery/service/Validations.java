@@ -17,7 +17,7 @@ public final class Validations {
     }
     
     public static boolean isValidState(String state) {
-        TaxRateDao taxRateDao = new TaxRateFileDao("Taxes.txt");
+        TaxRateDao taxRateDao = new TaxRateFileDao();
         List<TaxRate> taxRates = taxRateDao.getAllTaxRates();
         
         for (TaxRate r : taxRates) {
@@ -29,7 +29,7 @@ public final class Validations {
     }
     
     public static boolean isValidProduct(String product) {
-        ProductDao productDao = new ProductFileDao("Products.txt");
+        ProductDao productDao = new ProductFileDao();
         List<Product> products = productDao.getAllProducts();
         
         for (Product p : products) {

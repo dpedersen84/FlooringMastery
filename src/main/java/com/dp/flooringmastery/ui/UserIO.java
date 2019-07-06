@@ -1,6 +1,7 @@
 package com.dp.flooringmastery.ui;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 public interface UserIO {
     void print(String msg);
@@ -28,4 +29,8 @@ public interface UserIO {
     String readString(String prompt);
     
     boolean readBoolean(String prompt);
+    
+    LocalDate readLocalDate(String prompt);
+    
+    LocalDate readLocalDate(String prompt, LocalDate min, LocalDate max);
 }

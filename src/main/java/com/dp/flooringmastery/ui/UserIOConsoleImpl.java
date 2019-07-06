@@ -1,6 +1,9 @@
 package com.dp.flooringmastery.ui;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
 public class UserIOConsoleImpl implements UserIO {
@@ -13,6 +16,10 @@ public class UserIOConsoleImpl implements UserIO {
             = "[INVALID] Value is required.";
     private static final String NUMBER_BELOW_ZERO
             = "[INVALID] Enter a number greater than %s.";
+    private static final String INVALID_DATE
+            = "[INVALID] Please enter a valid date. [MM/dd/yyyy]";
+    private static final String DATE_OUT_OF_RANGE
+            = "[INVALID] Please enter a date between %s and %s.";
 
     private final Scanner scanner = new Scanner(System.in);
 
@@ -157,6 +164,30 @@ public class UserIOConsoleImpl implements UserIO {
                 return false;
             }
             print("[INVALID] Please enter 'y' or 'n'.");
+        }
+    }
+
+    @Override
+    public LocalDate readLocalDate(String prompt) {
+        while (true) {
+            try {
+                DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+                String value = readString(prompt);
+                return LocalDate.parse(value, formatter);
+            } catch (DateTimeParseException ex) {
+                print(INVALID_DATE);
+            }
+        }
+    }
+
+    @Override
+    public LocalDate readLocalDate(String prompt, LocalDate min, LocalDate max) {
+        while (true) {
+            LocalDate result = readLocalDate(prompt);
+            if (result.isAfter(min) && result.isBefore(max)) {
+                return result;
+            }
+            print(String.format(DATE_OUT_OF_RANGE, min, max));
         }
     }
 }

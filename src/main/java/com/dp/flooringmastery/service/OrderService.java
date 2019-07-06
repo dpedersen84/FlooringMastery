@@ -8,6 +8,8 @@ import com.dp.flooringmastery.models.Order;
 import com.dp.flooringmastery.models.Product;
 import com.dp.flooringmastery.models.TaxRate;
 import java.math.BigDecimal;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class OrderService {
@@ -22,11 +24,12 @@ public class OrderService {
         this.taxRateDao = taxRateDao;
     }
 
-    public Result<Order> addOrder(Order order) {
+    public Result<Order> addOrder(Order order) 
+            throws FileStorageException {
         Result<Order> result = new Result<>();
 
         if (!Validations.isValidDate(order.getDate())) {
-            result.addError("Please enter a date.");
+            result.addError("Please enter a date (Ex. 07/01/2019).");
         }
 
         if (Validations.isNullOrWhitespace(order.getCustomerName())) {
@@ -34,7 +37,7 @@ public class OrderService {
         }
 
         if (!Validations.isValidState(order.getState())) {
-            result.addError("Please enter a valid state.");
+            result.addError("Please enter a valid state (Ex. MN).");
         }
 
         if (!Validations.isValidProduct(order.getProductType())) {
@@ -49,7 +52,7 @@ public class OrderService {
             return result;
         }
 
-        String dateAsString = order.getDate().toString();
+        String dateAsString = turnDateToString(order.getDate());
 
         // Set orderNumber
         List<Order> allOrders = orderDao.findByDate(dateAsString, "orders");
@@ -64,15 +67,15 @@ public class OrderService {
 
         // Get product information
         Product product = productDao.getProduct(order.getProductType());
-        
+
         // Get tax rate for state
         TaxRate stateTaxRate = taxRateDao.getTaxRate(order.getState());
-        
+
         // Set order fields
         order.setCostPerSqFt(product.getCostPerSqFt());
         order.setLaborCostPerSqFt(product.getLaborCostPerSqFt());
         order.setTaxRate(stateTaxRate.getRate());
-        
+
         BigDecimal cpsf = order.getCostPerSqFt();
         BigDecimal lcpsf = order.getLaborCostPerSqFt();
         BigDecimal area = order.getArea();
@@ -103,13 +106,40 @@ public class OrderService {
 
         return result;
     }
-    
-    public List<Order> findByDate(String date, String folder) {
-        return orderDao.findByDate(date, folder);
+
+    public List<Order> findByDate(LocalDate date, String folder) 
+            throws FileStorageException {
+        String stringDate = turnDateToString(date);
+
+        return orderDao.findByDate(stringDate, folder);
     }
     
-    public boolean deleteOrder(int orderNumber, String date, String folder) 
+    public Order findByOrderNumber(LocalDate date, int orderNumber, String folder)
+            throws FileStorageException, InvalidOrderNumberException {
+        
+        String stringDate = turnDateToString(date);
+        
+        List<Order> ordersByDate = orderDao.findByDate(stringDate, folder);
+        
+        Order chosenOrder = ordersByDate.stream().filter(o -> 
+                o.getOrderNumber() == orderNumber).findFirst().orElse(null);
+        
+        if(chosenOrder != null) {
+            return chosenOrder;
+        } else {
+            throw new InvalidOrderNumberException("ERROR: No orders with that number exist.");
+        }
+    }
+
+    public boolean deleteOrder(int orderNumber, LocalDate date, String folder)
             throws FileStorageException {
-        return orderDao.delete(orderNumber, date, folder);
+        String stringDate = turnDateToString(date);
+        
+        return orderDao.delete(orderNumber, stringDate, folder);
+    }
+
+    private String turnDateToString(LocalDate date) {
+        String formatted = date.format(DateTimeFormatter.ofPattern("MMddyyyy"));
+        return formatted;
     }
 }

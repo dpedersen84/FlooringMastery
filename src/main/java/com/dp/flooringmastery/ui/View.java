@@ -2,6 +2,7 @@ package com.dp.flooringmastery.ui;
 
 import com.dp.flooringmastery.models.Order;
 import com.dp.flooringmastery.service.Response;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.util.List;
 
@@ -13,22 +14,22 @@ public class View {
         this.io = new UserIOConsoleImpl();
     }
 
-    public MainMenu menuSelect() {
-        int min = Integer.MAX_VALUE;
-        int max = Integer.MIN_VALUE;
-        for (MainMenu mmo : MainMenu.values()) {
-            io.print(String.format("%s. %s", mmo.getValue(), mmo.getOption()));
-            min = Math.min(mmo.getValue(), min);
-            max = Math.max(mmo.getValue(), max);
-        }
-        int value = io.readInt(String.format("Select [%s-%s]:", min, max), min, max);
-        return MainMenu.fromValue(value);
+    // menu
+    public int displayMainMenuAndGetSelection() {
+        io.print("1. Display Orders");
+        io.print("2. Add Order");
+        io.print("3. Edit Order");
+        io.print("4. Delete Order");
+        io.print("5. Exit");
+        io.print("");
+        return io.readInt("What would you like to do? [1-5]", 1, 5);
     }
 
     public boolean confirm(String message) {
         return io.readBoolean(String.format("%s [y/n]:", message));
     }
 
+    // banners
     public void hello() {
         io.print("==================");
         io.print("Welcome to Dan's Flooring!");
@@ -41,9 +42,70 @@ public class View {
         io.print("==================\n");
     }
 
-    Order createOrder(LocalDate date) {
+    void displayDisplayOrdersBanner() {
+        io.print("==================");
+        io.print("Display Orders!");
+        io.print("==================\n");
+    }
+
+    void displayAddOrderBanner() {
+        io.print("==================");
+        io.print("Add Order!");
+        io.print("==================\n");
+    }
+
+    void displayEditOrderBanner() {
+        io.print("==================");
+        io.print("Edit Order!");
+        io.print("==================\n");
+    }
+
+    void displayRemoveOrderBanner() {
+        io.print("==================");
+        io.print("Remove Order!");
+        io.print("==================\n");
+    }
+    
+    void displaySuccess() {
+        io.print("==================");
+        io.print("Success!");
+        io.print("==================\n");
+    }
+
+    void displayUnknownCommandBanner() {
+        io.print("Unknown Command!");
+    }
+
+    void displayErrorMessage(String errorMsg) {
+        io.print(errorMsg);
+    }
+
+    // input 
+    LocalDate getDateInput() {
+        return io.readLocalDate("Order Date(Ex. 04/01/2019): ");
+    }
+    
+    int getOrderNumber() {
+        return io.readInt("Order Number: ");
+    }
+
+    String getCustomerNameInput() {
+        return io.readRequiredString("Customer name: ");
+    }
+
+    String getProductInput() {
+        return io.readRequiredString("Product: ");
+    }
+
+    BigDecimal getAreaInput() {
+        return io.readBigDecimal("Area: ");
+    }
+
+    // create order
+    Order createOrder() {
         Order order = new Order();
-        order.setDate(io.readLocalDate("Order Date: ", LocalDate.of(2018, 1, 1), LocalDate.of(2025, 1, 1)));
+        order.setDate(io.readLocalDate("Order Date(Ex. 04/01/2019): ",
+                LocalDate.of(2018, 1, 1), LocalDate.of(2025, 1, 1)));
         order.setCustomerName(io.readRequiredString("Customer Name: "));
         order.setState(io.readRequiredString("State (ex: MN): "));
         order.setArea(io.readBigDecimal("Area: "));
@@ -52,6 +114,7 @@ public class View {
         return order;
     }
 
+    // displays
     void displayErrors(Response r) {
         io.print("==================");
         io.print("ERROR");
@@ -60,22 +123,23 @@ public class View {
         }
         io.print("==================\n");
     }
-    
-    void displayOrder(Order order) {
-        io.print(order.getCustomerName());
-        io.print(order.getDate().toString());
-        io.print(order.getState());
-        io.print(order.getArea().toString());
-        io.print(order.getProductType());
-        io.print(order.getCostPerSqFt().toString());
-        io.print(order.getLaborCostPerSqFt().toString());
-        io.print("Totals:\n");
-        io.print(order.getLaborCost().toString());
-        io.print(order.getMaterialCost().toString());
-        io.print(order.getTax().toString());
-        io.print(order.getTotal().toString());
+
+    void displayOrder(Order o) {
+        io.print(String.format("Customer Name: %s", o.getCustomerName()));
+        io.print(String.format("State: %s", o.getState()));
+        io.print(String.format("Area: %s", o.getArea().toString()));
+        io.print(String.format("Product: %s", o.getProductType()));
+        io.print(String.format("Cost per Square Foot: $%s",
+                o.getCostPerSqFt().toString()));
+        io.print(String.format("Labor Cost per Square Foot: $%s",
+                o.getLaborCostPerSqFt().toString()));
+        io.print(String.format("Labor Cost: $%s", o.getLaborCost().toString()));
+        io.print(String.format("Material Cost: $%s", o.getMaterialCost().toString()));
+        io.print(String.format("Tax: $%s", o.getTax().toString()));
+        io.print(String.format("Total: $%s", o.getTotal().toString()));
+        io.print("");
     }
-    
+
     void displayOrders(List<Order> orders) {
         if (orders == null || orders.size() <= 0) {
             io.print("No orders for that date.\n");
@@ -85,7 +149,7 @@ public class View {
             }
         }
     }
-    
+
     boolean accept(Order order) {
         io.print("==================");
         io.print("Review your order: ");
@@ -93,4 +157,5 @@ public class View {
         displayOrder(order);
         return confirm("Is this information correct?");
     }
+
 }

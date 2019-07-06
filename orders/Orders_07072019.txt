@@ -1,0 +1,6 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,Blue,MN,5.00,Slate,100,3.50,3.75,350.00,375.00,36.25,761.25
+3,Second,MN,5.00,Slate,100,3.50,3.75,350.00,375.00,36.25,761.25
+4,Third,WI,6.75,Slate,10,3.50,3.75,35.00,37.50,4.89,77.39
+5,Fourth,MN,5.00,Slate,100,3.50,3.75,350.00,375.00,36.25,761.25
+6,Fifth,MN,5.00,Slate,100,3.50,3.75,350.00,375.00,36.25,761.25

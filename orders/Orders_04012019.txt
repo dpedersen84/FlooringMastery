@@ -9,3 +9,7 @@ OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborC
 8,Von-Grant,NE,5.3,Parquet,2350.00,1.75,2.25,4112.50,5287.50,493.50,9893.50
 9,Kub-Okuneva,ND,3.3,Frieze Carpet,3100.00,3.00,2.00,9300.00,6200.00,503.75,16003.75
 10,Rolfson Inc,NE,5.3,Concrete,350.00,2.25,5.25,787.50,1837.50,137.81,2762.81
+11,Service Company,MN,5.00,Slate,100.00,3.50,3.75,350.00,375.00,36.25,761.25
+12,Service Company,MN,5.00,Slate,100.00,3.50,3.75,350.00,375.00,36.25,761.25
+13,Service Company,MN,5.00,Slate,100.00,3.50,3.75,350.00,375.00,36.25,761.25
+14,Service Company,MN,5.00,Slate,100.00,3.50,3.75,350.00,375.00,36.25,761.25
