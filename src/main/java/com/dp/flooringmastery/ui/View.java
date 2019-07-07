@@ -65,7 +65,7 @@ public class View {
         io.print("Remove Order!");
         io.print("==================\n");
     }
-    
+
     void displaySuccess() {
         io.print("==================");
         io.print("Success!");
@@ -84,21 +84,25 @@ public class View {
     LocalDate getDateInput() {
         return io.readLocalDate("Order Date(Ex. 04/01/2019): ");
     }
-    
+
     int getOrderNumber() {
         return io.readInt("Order Number: ");
     }
 
     String getCustomerNameInput() {
-        return io.readRequiredString("Customer name: ");
+        return io.readString("Customer Name: ");
     }
 
     String getProductInput() {
-        return io.readRequiredString("Product: ");
+        return io.readString("Product: ");
     }
 
     BigDecimal getAreaInput() {
         return io.readBigDecimal("Area: ");
+    }
+    
+    String getStateInput() {
+        return io.readString("State: ");
     }
 
     // create order
@@ -138,6 +142,24 @@ public class View {
         io.print(String.format("Tax: $%s", o.getTax().toString()));
         io.print(String.format("Total: $%s", o.getTotal().toString()));
         io.print("");
+    }
+
+    Order displayEditOrder(Order o) {
+        Order editedOrder = new Order();
+        
+        io.print(String.format("Customer Name: %s", o.getCustomerName()));
+        editedOrder.setCustomerName(getCustomerNameInput());
+        
+        io.print(String.format("State: %s", o.getState()));
+        editedOrder.setState(getStateInput());
+        
+        io.print(String.format("Area: %s", o.getArea().toString()));
+        editedOrder.setArea(getAreaInput());
+        
+        io.print(String.format("Product: %s", o.getProductType()));
+        editedOrder.setProductType(getProductInput());
+        
+        return editedOrder;
     }
 
     void displayOrders(List<Order> orders) {

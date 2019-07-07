@@ -57,7 +57,7 @@ public class OrderServiceTest {
         newOrder.setState("MN");
         newOrder.setProductType("Slate");
         newOrder.setArea(new BigDecimal("100.00"));
-        service.addOrder(newOrder);
+        service.addOrder(newOrder, "orders-test");
     }
 
     @Test
@@ -68,14 +68,14 @@ public class OrderServiceTest {
 
         List<Order> testOrders = service.findByDate(ld, folder);
 
-        assertEquals(3, testOrders.size());
+        assertEquals(4, testOrders.size());
     }
 
     @Test
     public void testDeleteOrder() throws FileStorageException {
         String folder = "orders-test";
         LocalDate ld = LocalDate.now();
-        ld = LocalDate.parse("2019-04-01");
+        ld = LocalDate.parse("2019-04-03");
         
         assertTrue(service.deleteOrder(1, ld, folder));
     }

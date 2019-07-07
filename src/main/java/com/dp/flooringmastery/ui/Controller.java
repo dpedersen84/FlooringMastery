@@ -68,7 +68,7 @@ public class Controller {
     private void addOrder() throws FileStorageException {
         view.displayAddOrderBanner();
         Order newOrder = view.createOrder();
-        Result<Order> result = orderService.addOrder(newOrder);
+        Result<Order> result = orderService.addOrder(newOrder, "orders");
         if (result.hasError()) {
             view.displayErrors(result);
         } else {
@@ -76,8 +76,15 @@ public class Controller {
         }
     }
 
-    private void editOrder() {
+    private void editOrder() throws FileStorageException, InvalidOrderNumberException {
         view.displayEditOrderBanner();
+        LocalDate orderDate = view.getDateInput();
+        int orderNumber = view.getOrderNumber();
+        Order chosenOrder = orderService.findByOrderNumber(orderDate, orderNumber, "orders");
+        view.displayOrder(chosenOrder);
+        Order editedOrder = view.displayEditOrder(chosenOrder);
+        orderService.editOrder(chosenOrder, editedOrder, orderDate, "orders");
+        view.displaySuccess();
     }
 
     private void removeOrder() throws FileStorageException, InvalidOrderNumberException {

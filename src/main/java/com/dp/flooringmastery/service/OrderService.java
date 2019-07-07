@@ -24,7 +24,7 @@ public class OrderService {
         this.taxRateDao = taxRateDao;
     }
 
-    public Result<Order> addOrder(Order order) 
+    public Result<Order> addOrder(Order order, String folder)
             throws FileStorageException {
         Result<Order> result = new Result<>();
 
@@ -52,10 +52,10 @@ public class OrderService {
             return result;
         }
 
-        String dateAsString = turnDateToString(order.getDate());
+        String dateAsString = order.getDate().format(DateTimeFormatter.ofPattern("MMddyyyy"));
 
         // Set orderNumber
-        List<Order> allOrders = orderDao.findByDate(dateAsString, "orders");
+        List<Order> allOrders = orderDao.findByDate(dateAsString, folder);
         if (allOrders.isEmpty()) {
             order.setOrderNumber(1);
         } else {
@@ -98,7 +98,7 @@ public class OrderService {
         order.setTotal(total);
 
         try {
-            orderDao.add(order, dateAsString, "orders");
+            orderDao.add(order, dateAsString, folder);
             result.setValue(order);
         } catch (FileStorageException ex) {
             result.addError(ex.getMessage());
@@ -107,39 +107,103 @@ public class OrderService {
         return result;
     }
 
-    public List<Order> findByDate(LocalDate date, String folder) 
+    public List<Order> findByDate(LocalDate date, String folder)
             throws FileStorageException {
-        String stringDate = turnDateToString(date);
 
-        return orderDao.findByDate(stringDate, folder);
+        String dateAsString = date.format(DateTimeFormatter
+                .ofPattern("MMddyyyy"));
+
+        return orderDao.findByDate(dateAsString, folder);
     }
-    
+
     public Order findByOrderNumber(LocalDate date, int orderNumber, String folder)
             throws FileStorageException, InvalidOrderNumberException {
-        
-        String stringDate = turnDateToString(date);
-        
-        List<Order> ordersByDate = orderDao.findByDate(stringDate, folder);
-        
-        Order chosenOrder = ordersByDate.stream().filter(o -> 
-                o.getOrderNumber() == orderNumber).findFirst().orElse(null);
-        
-        if(chosenOrder != null) {
+
+        String dateAsString = date.format(DateTimeFormatter
+                .ofPattern("MMddyyyy"));
+
+        List<Order> ordersByDate = orderDao.findByDate(dateAsString, folder);
+
+        Order chosenOrder = ordersByDate.stream().filter(o
+                -> o.getOrderNumber() == orderNumber).findFirst().orElse(null);
+
+        if (chosenOrder != null) {
             return chosenOrder;
         } else {
-            throw new InvalidOrderNumberException("ERROR: No orders with that number exist.");
+            throw new InvalidOrderNumberException("No orders with that number exist.");
         }
+    }
+
+    public boolean editOrder(Order originalOrder, Order editedOrder, LocalDate date, String folder)
+            throws FileStorageException {
+        
+        String dateAsString = date.format(DateTimeFormatter.ofPattern("MMddyyyy"));
+
+        if (editedOrder.getCustomerName() == null || editedOrder.getCustomerName().equals("")) {
+            editedOrder.setCustomerName(originalOrder.getCustomerName());
+        }
+
+        if (editedOrder.getState() == null || editedOrder.getState().equals("")) {
+            editedOrder.setState(originalOrder.getState());
+        }
+
+        if (editedOrder.getProductType() == null || editedOrder.getProductType().equals("")) {
+            editedOrder.setProductType(originalOrder.getProductType());
+        }
+
+        if (editedOrder.getArea() == null || editedOrder.getArea().compareTo(BigDecimal.ZERO) == 0) {
+            editedOrder.setArea(originalOrder.getArea());
+        }
+
+        editedOrder.setOrderNumber(originalOrder.getOrderNumber());
+
+        // Get product information
+        Product product = productDao.getProduct(editedOrder.getProductType());
+
+        // Get tax rate for state
+        TaxRate stateTaxRate = taxRateDao.getTaxRate(editedOrder.getState());
+
+        // Set order fields
+        editedOrder.setCostPerSqFt(product.getCostPerSqFt());
+        editedOrder.setLaborCostPerSqFt(product.getLaborCostPerSqFt());
+        editedOrder.setTaxRate(stateTaxRate.getRate());
+
+        BigDecimal cpsf = editedOrder.getCostPerSqFt();
+        BigDecimal lcpsf = editedOrder.getLaborCostPerSqFt();
+        BigDecimal area = editedOrder.getArea();
+        BigDecimal taxRate = editedOrder.getTaxRate();
+
+        // Calculate material cost
+        BigDecimal materialCost = Calculations.calcMaterialCost(cpsf, area);
+        editedOrder.setMaterialCost(materialCost);
+
+        // Calculate labor cost
+        BigDecimal laborCost = Calculations.calcLaborCost(lcpsf, area);
+        editedOrder.setLaborCost(laborCost);
+
+        // Calculate tax
+        BigDecimal tax = Calculations.calcTax(materialCost, laborCost, taxRate);
+        editedOrder.setTax(tax);
+
+        // Calculate total
+        BigDecimal total = Calculations.calcTotal(materialCost, laborCost, tax);
+        editedOrder.setTotal(total);
+
+        return orderDao.edit(originalOrder, editedOrder, dateAsString, folder);
     }
 
     public boolean deleteOrder(int orderNumber, LocalDate date, String folder)
             throws FileStorageException {
-        String stringDate = turnDateToString(date);
         
-        return orderDao.delete(orderNumber, stringDate, folder);
+        String dateAsString = date.format(DateTimeFormatter.ofPattern("MMddyyyy"));
+
+        return orderDao.delete(orderNumber, dateAsString, folder);
     }
 
     private String turnDateToString(LocalDate date) {
+        
         String formatted = date.format(DateTimeFormatter.ofPattern("MMddyyyy"));
+        
         return formatted;
     }
 }

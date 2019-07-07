@@ -1,2 +1,2 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-5,Service Company,MN,5.00,Slate,100.00,3.50,3.75,350.00,375.00,36.25,761.25
+1,Jim's Pizza,MN,5.00,Bamboo,10,2.50,2.25,25.00,22.50,2.38,49.88

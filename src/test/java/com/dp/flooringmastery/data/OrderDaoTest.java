@@ -78,14 +78,20 @@ public class OrderDaoTest {
         testTotal = testTotal.setScale(2, RoundingMode.HALF_UP);
         testOrder.setTotal(testTotal);
 
-        dao.add(testOrder, "07022019", "orders-test");
+        LocalDate ld = LocalDate.now();
+        ld = LocalDate.parse("2015-01-01");
+        ld = LocalDate.parse("07/02/2019", DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        String isoDate = ld.toString();
+        ld = LocalDate.parse(isoDate);
+        String formatted = ld.format(DateTimeFormatter.ofPattern("MMddyyyy"));
+        
+        dao.add(testOrder, formatted, "orders-test");
     }
 
     @Test
     public void testFindByDate() throws FileStorageException {
         LocalDate ld = LocalDate.now();
         ld = LocalDate.parse("2015-01-01");
-        
         ld = LocalDate.parse("04/01/2019", DateTimeFormatter.ofPattern("MM/dd/yyyy"));
         String isoDate = ld.toString();
         ld = LocalDate.parse(isoDate);
@@ -98,52 +104,80 @@ public class OrderDaoTest {
 
     @Test
     public void testEditOrder() throws FileStorageException {
-        Order editedOrder = new Order();
-        editedOrder.setOrderNumber(1);
-        editedOrder.setCustomerName("Test Company Edit");
+        Order orderOne = new Order();
+        orderOne.setOrderNumber(1);
+        orderOne.setCustomerName("Test Company Edit");
 
         TaxRate testTaxRate = taxRateDao.getTaxRate("WI");
         String testState = testTaxRate.getState();
-        editedOrder.setState(testState);
+        orderOne.setState(testState);
         BigDecimal testRate = testTaxRate.getRate();
-        editedOrder.setTaxRate(testRate);
+        orderOne.setTaxRate(testRate);
 
         Product testProduct = productDao.getProduct("Slate");
-        editedOrder.setProductType(testProduct.getName());
-        editedOrder.setArea(new BigDecimal("10.00"));
-        editedOrder.setCostPerSqFt(testProduct.getCostPerSqFt());
-        editedOrder.setLaborCostPerSqFt(testProduct.getLaborCostPerSqFt());
+        orderOne.setProductType(testProduct.getName());
+        orderOne.setArea(new BigDecimal("10.00"));
+        orderOne.setCostPerSqFt(testProduct.getCostPerSqFt());
+        orderOne.setLaborCostPerSqFt(testProduct.getLaborCostPerSqFt());
 
-        BigDecimal testMaterialCost = editedOrder.getArea()
+        BigDecimal testMaterialCost = orderOne.getArea()
                 .multiply(testProduct.getCostPerSqFt());
         testMaterialCost = testMaterialCost.setScale(2, RoundingMode.HALF_UP);
-        editedOrder.setMaterialCost(testMaterialCost);
+        orderOne.setMaterialCost(testMaterialCost);
 
-        BigDecimal testLaborCost = editedOrder.getArea()
+        BigDecimal testLaborCost = orderOne.getArea()
                 .multiply(testProduct.getLaborCostPerSqFt());
         testLaborCost = testLaborCost.setScale(2, RoundingMode.HALF_UP);
-        editedOrder.setLaborCost(testLaborCost);
+        orderOne.setLaborCost(testLaborCost);
 
-        BigDecimal testTax = (editedOrder.getMaterialCost()
-                .add(editedOrder.getLaborCost())).multiply(editedOrder.getTaxRate()
+        BigDecimal testTax = (orderOne.getMaterialCost()
+                .add(orderOne.getLaborCost())).multiply(orderOne.getTaxRate()
                 .divide(new BigDecimal("100")));
         testTax = testTax.setScale(2, RoundingMode.HALF_DOWN);
-        editedOrder.setTax(testTax);
+        orderOne.setTax(testTax);
 
-        BigDecimal testTotal = editedOrder.getLaborCost()
-                .add(editedOrder.getMaterialCost().add(editedOrder.getTax()));
+        BigDecimal testTotal = orderOne.getLaborCost()
+                .add(orderOne.getMaterialCost().add(orderOne.getTax()));
         testTotal = testTotal.setScale(2, RoundingMode.HALF_DOWN);
-        editedOrder.setTotal(testTotal);
+        orderOne.setTotal(testTotal);
         
-        assertTrue(dao.edit(editedOrder, "04012019", "orders-test"));
+        // edited order with only edited name
+        Order orderTwo = new Order();
+        orderTwo.setOrderNumber(1);
+        orderTwo.setCustomerName("Name has been edited!");
+        orderTwo.setState(testState);
+        orderTwo.setTaxRate(testRate);
+        orderTwo.setProductType(testProduct.getName());
+        orderTwo.setArea(new BigDecimal("10.00"));
+        orderTwo.setCostPerSqFt(testProduct.getCostPerSqFt());
+        orderTwo.setLaborCostPerSqFt(testProduct.getLaborCostPerSqFt());
+        orderTwo.setMaterialCost(testMaterialCost);
+        orderTwo.setLaborCost(testLaborCost);
+        orderTwo.setTax(testTax);
+        orderTwo.setTotal(testTotal);
+        
+        LocalDate ld = LocalDate.now();
+        ld = LocalDate.parse("2015-01-01");
+        ld = LocalDate.parse("04/01/2019", DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        String isoDate = ld.toString();
+        ld = LocalDate.parse(isoDate);
+        String formatted = ld.format(DateTimeFormatter.ofPattern("MMddyyyy"));
+ 
+        assertTrue(dao.edit(orderOne, orderTwo, formatted, "orders-test"));
     }
 
     @Test
     public void testRemoveOrder() throws FileStorageException {
-        assertTrue(dao.delete(1, "04032019", "orders-test"));
-
-        int endSize = dao.findByDate("04012019", "orders-test").size();
+        LocalDate ld = LocalDate.now();
+        ld = LocalDate.parse("2015-01-01");
+        ld = LocalDate.parse("04/03/2019", DateTimeFormatter.ofPattern("MM/dd/yyyy"));
+        String isoDate = ld.toString();
+        ld = LocalDate.parse(isoDate);
+        String formatted = ld.format(DateTimeFormatter.ofPattern("MMddyyyy"));
         
-        assertEquals(4, endSize);
+        assertTrue(dao.delete(1, formatted, "orders-test"));
+
+//        List<Order> testList = dao.findByDate(formatted, "orders-test");
+//        assertEquals(3, testList.size());
     }
 }

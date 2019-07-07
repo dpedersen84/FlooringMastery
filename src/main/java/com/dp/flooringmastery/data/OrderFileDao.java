@@ -8,8 +8,6 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.math.BigDecimal;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -18,26 +16,27 @@ import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class OrderFileDao implements OrderDao {
-    
+
     private final Map<Integer, Order> allOrders = new HashMap<>();
-    
+
     public String path = "orders/";
-    
+    public String homeFolder = "orders/";
+
     public OrderFileDao() {
     }
-    
+
     public OrderFileDao(String path) {
         this.path = path;
     }
-    
+
     @Override
-    public void add(Order order, String date, String folder) 
+    public void add(Order order, String date, String folder)
             throws FileStorageException {
-        
+
         List<Order> orders = findByDate(date, folder);
-        
+
         orders.add(order);
-        
+
         writeDatabase(orders, folder, date);
     }
 
@@ -45,6 +44,7 @@ public class OrderFileDao implements OrderDao {
     public List<Order> findByDate(String date, String folder) {
         try {
             loadDatabase(folder, date);
+//            loadDatabase(path, date);
         } catch (FileStorageException ex) {
             return new ArrayList<>();
         }
@@ -52,14 +52,14 @@ public class OrderFileDao implements OrderDao {
     }
 
     @Override
-    public boolean edit(Order order, String date, String folder) 
+    public boolean edit(Order order, Order editedOrder, String date, String folder)
             throws FileStorageException {
-       
+
         List<Order> orders = this.findByDate(date, folder);
-        
+
         for (int i = 0; i < orders.size(); i++) {
             if (orders.get(i).getOrderNumber() == order.getOrderNumber()) {
-                orders.set(i, order);
+                orders.set(i, editedOrder);
                 writeDatabase(orders, folder, date);
                 return true;
             }
@@ -68,10 +68,11 @@ public class OrderFileDao implements OrderDao {
     }
 
     @Override
-    public boolean delete(int orderNumber, String date, String folder) 
+    public boolean delete(int orderNumber, String date, String folder)
             throws FileStorageException {
         List<Order> orders = this.findByDate(date, folder);
-        
+//        List<Order> orders = this.findByDate(date, path);
+
         for (int i = 0; i < orders.size(); i++) {
             if (orders.get(i).getOrderNumber() == orderNumber) {
                 orders.remove(i);
@@ -81,7 +82,7 @@ public class OrderFileDao implements OrderDao {
         }
         return false;
     }
-    
+
     private Order mapToOrder(String orderAsString) {
         String[] tokens = orderAsString.split(",");
 
@@ -118,21 +119,22 @@ public class OrderFileDao implements OrderDao {
                 order.getTotal());
     }
 
-    private void loadDatabase(String folder, String date) 
+    private void loadDatabase(String folder, String date)
             throws FileStorageException {
         Scanner scanner;
-        
+
         path = String.format("%s/Orders_%s.txt", folder, date);
-        
+//        path = String.format("%s/Orders_%s.txt", path , date);
+
         try {
             scanner = new Scanner(new BufferedReader(new FileReader(path)));
         } catch (FileNotFoundException e) {
-            throw new FileStorageException("Could not load products.");
+            throw new FileStorageException("Could not load orders.");
         }
-       
+
         String currentLine;
         Order currentOrder;
-        
+
         scanner.nextLine(); // Remove header
 
         while (scanner.hasNextLine()) {
@@ -144,37 +146,30 @@ public class OrderFileDao implements OrderDao {
         scanner.close();
     }
 
-    private void writeDatabase(List<Order> orders, String folder, String date) 
+    private void writeDatabase(List<Order> orders, String folder, String date)
             throws FileStorageException {
         PrintWriter out;
-        
+
         path = String.format("%s/Orders_%s.txt", folder, date);
+//        path = String.format("%s/Orders_%s.txt", path, date);
 
         try {
             out = new PrintWriter(new FileWriter(path));
         } catch (IOException e) {
-            throw new FileStorageException("Could not save item.", e);
+            throw new FileStorageException("Could not save order.", e);
         }
-        
+
         String orderAsText;
 
         out.println("OrderNumber,CustomerName,State,TaxRate,ProductType,"
                 + "Area,CostPerSquareFoot,LaborCostPerSquareFoot,"
                 + "MaterialCost,LaborCost,Tax,Total");
-        
+
         for (Order currentOrder : orders) {
             orderAsText = mapToString(currentOrder);
             out.println(orderAsText);
             out.flush();
         }
         out.close();
-    }
-
-    private String turnDateToString(LocalDate date) {
-        LocalDate ld = LocalDate.now();
-        String stringDate = ld.toString();
-        ld = LocalDate.parse(stringDate, DateTimeFormatter.ofPattern("MM/dd/yyyy"));
-        String formatted = ld.format(DateTimeFormatter.ofPattern("MMddyyyy"));
-        return formatted;
     }
 }
