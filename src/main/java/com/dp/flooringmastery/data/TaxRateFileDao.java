@@ -18,10 +18,6 @@ public class TaxRateFileDao implements TaxRateDao {
 
     String path = "Taxes.txt";
 
-//    public TaxRateFileDao(String path) {
-//        this.path = path;
-//    }
-
     @Override
     public TaxRate getTaxRate(String state) {
         if (allTaxRates.isEmpty()) {
@@ -78,5 +74,4 @@ public class TaxRateFileDao implements TaxRateDao {
         }
         scanner.close();
     }
-
 }

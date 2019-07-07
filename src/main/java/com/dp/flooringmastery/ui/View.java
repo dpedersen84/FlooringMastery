@@ -31,9 +31,9 @@ public class View {
 
     // banners
     public void hello() {
-        io.print("==================");
-        io.print("Welcome to Dan's Flooring!");
-        io.print("==================\n");
+        io.print("* * * * * * * * * * \n");
+        io.print("Dan's Flooring!\n");
+        io.print("* * * * * * * * * * \n");
     }
 
     public void goodbye() {

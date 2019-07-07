@@ -134,76 +134,93 @@ public class OrderService {
         }
     }
 
-    public boolean editOrder(Order originalOrder, Order editedOrder, LocalDate date, String folder)
+    public Result<Order> editOrder(Order oldOrder, Order newOrder, LocalDate date, String folder)
             throws FileStorageException {
-        
+
+        Result<Order> result = new Result<>();
+
         String dateAsString = date.format(DateTimeFormatter.ofPattern("MMddyyyy"));
 
-        if (editedOrder.getCustomerName() == null || editedOrder.getCustomerName().equals("")) {
-            editedOrder.setCustomerName(originalOrder.getCustomerName());
+        if (newOrder.getCustomerName() == null 
+                || newOrder.getCustomerName().equals("")) {
+            newOrder.setCustomerName(oldOrder.getCustomerName());
         }
 
-        if (editedOrder.getState() == null || editedOrder.getState().equals("")) {
-            editedOrder.setState(originalOrder.getState());
+        if (newOrder.getState() == null 
+                || newOrder.getState().equals("")) {
+            newOrder.setState(oldOrder.getState());
         }
 
-        if (editedOrder.getProductType() == null || editedOrder.getProductType().equals("")) {
-            editedOrder.setProductType(originalOrder.getProductType());
+        if (newOrder.getProductType() == null 
+                || newOrder.getProductType().equals("")) {
+            newOrder.setProductType(oldOrder.getProductType());
         }
 
-        if (editedOrder.getArea() == null || editedOrder.getArea().compareTo(BigDecimal.ZERO) == 0) {
-            editedOrder.setArea(originalOrder.getArea());
+        if (newOrder.getArea() == null 
+                || newOrder.getArea().compareTo(BigDecimal.ZERO) == 0) {
+            newOrder.setArea(oldOrder.getArea());
         }
 
-        editedOrder.setOrderNumber(originalOrder.getOrderNumber());
+        newOrder.setOrderNumber(oldOrder.getOrderNumber());
+
+        if (!Validations.isValidState(newOrder.getState())) {
+            result.addError("Please enter a valid state (Ex. MN).");
+        }
+
+        if (!Validations.isValidProduct(newOrder.getProductType())) {
+            result.addError("Please enter a valid product.");
+        }
+
+        if (result.hasError()) {
+            return result;
+        }
 
         // Get product information
-        Product product = productDao.getProduct(editedOrder.getProductType());
+        Product product = productDao.getProduct(newOrder.getProductType());
 
         // Get tax rate for state
-        TaxRate stateTaxRate = taxRateDao.getTaxRate(editedOrder.getState());
+        TaxRate stateTaxRate = taxRateDao.getTaxRate(newOrder.getState());
 
         // Set order fields
-        editedOrder.setCostPerSqFt(product.getCostPerSqFt());
-        editedOrder.setLaborCostPerSqFt(product.getLaborCostPerSqFt());
-        editedOrder.setTaxRate(stateTaxRate.getRate());
+        newOrder.setCostPerSqFt(product.getCostPerSqFt());
+        newOrder.setLaborCostPerSqFt(product.getLaborCostPerSqFt());
+        newOrder.setTaxRate(stateTaxRate.getRate());
 
-        BigDecimal cpsf = editedOrder.getCostPerSqFt();
-        BigDecimal lcpsf = editedOrder.getLaborCostPerSqFt();
-        BigDecimal area = editedOrder.getArea();
-        BigDecimal taxRate = editedOrder.getTaxRate();
+        BigDecimal cpsf = newOrder.getCostPerSqFt();
+        BigDecimal lcpsf = newOrder.getLaborCostPerSqFt();
+        BigDecimal area = newOrder.getArea();
+        BigDecimal taxRate = newOrder.getTaxRate();
 
         // Calculate material cost
         BigDecimal materialCost = Calculations.calcMaterialCost(cpsf, area);
-        editedOrder.setMaterialCost(materialCost);
+        newOrder.setMaterialCost(materialCost);
 
         // Calculate labor cost
         BigDecimal laborCost = Calculations.calcLaborCost(lcpsf, area);
-        editedOrder.setLaborCost(laborCost);
+        newOrder.setLaborCost(laborCost);
 
         // Calculate tax
         BigDecimal tax = Calculations.calcTax(materialCost, laborCost, taxRate);
-        editedOrder.setTax(tax);
+        newOrder.setTax(tax);
 
         // Calculate total
         BigDecimal total = Calculations.calcTotal(materialCost, laborCost, tax);
-        editedOrder.setTotal(total);
+        newOrder.setTotal(total);
 
-        return orderDao.edit(originalOrder, editedOrder, dateAsString, folder);
+        try {
+            orderDao.edit(oldOrder, newOrder, dateAsString, folder);
+            result.setValue(newOrder);
+        } catch (FileStorageException ex) {
+            result.addError(ex.getMessage());
+        }
+        return result;
     }
 
     public boolean deleteOrder(int orderNumber, LocalDate date, String folder)
             throws FileStorageException {
-        
+
         String dateAsString = date.format(DateTimeFormatter.ofPattern("MMddyyyy"));
 
         return orderDao.delete(orderNumber, dateAsString, folder);
-    }
-
-    private String turnDateToString(LocalDate date) {
-        
-        String formatted = date.format(DateTimeFormatter.ofPattern("MMddyyyy"));
-        
-        return formatted;
     }
 }

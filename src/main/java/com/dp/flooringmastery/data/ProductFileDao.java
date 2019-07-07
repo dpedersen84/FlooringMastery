@@ -4,9 +4,6 @@ import com.dp.flooringmastery.models.Product;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -20,11 +17,7 @@ public class ProductFileDao implements ProductDao {
     private final Map<String, Product> allProducts = new HashMap<>();
 
     String path = "products.txt";
-
-//    public ProductFileDao(String path) {
-//        this.path = path;
-//    }
-
+    
     @Override
     public Product getProduct(String name) {
         if (allProducts.isEmpty()) {
@@ -60,13 +53,6 @@ public class ProductFileDao implements ProductDao {
         return product;
     }
 
-    private String mapToString(Product product) {
-        return String.format("%s,%s,%s",
-                product.getName(),
-                product.getCostPerSqFt(),
-                product.getLaborCostPerSqFt());
-    }
-
     private void loadDatabase() throws FileStorageException {
         Scanner scanner;
 
@@ -88,26 +74,5 @@ public class ProductFileDao implements ProductDao {
             allProducts.put(currentProduct.getName(), currentProduct);
         }
         scanner.close();
-    }
-
-    private void writeDatabase() throws FileStorageException {
-        PrintWriter out;
-
-        try {
-            out = new PrintWriter(new FileWriter(path));
-        } catch (IOException e) {
-            throw new FileStorageException("Could not save item.", e);
-        }
-
-        String productAsText;
-
-        List<Product> productList = this.getAllProducts();
-
-        for (Product currentProduct : productList) {
-            productAsText = mapToString(currentProduct);
-            out.println(productAsText);
-            out.flush();
-        }
-        out.close();
     }
 }

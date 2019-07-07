@@ -59,7 +59,10 @@ public class OrderServiceTest {
         newOrder.setState("MN");
         newOrder.setProductType("Slate");
         newOrder.setArea(new BigDecimal("100.00"));
-        service.addOrder(newOrder, "orders-test");
+        
+        Result<Order> order = service.addOrder(newOrder, "orders-test");
+        
+        assertNotNull(order);
     }
 
     @Test
@@ -88,7 +91,9 @@ public class OrderServiceTest {
         Order editOrder = origOrder;
         editOrder.setCustomerName("Edited Name!");
         
-        assertTrue(service.editOrder(origOrder, editOrder, ld, folder));
+        Result<Order> order = service.editOrder(origOrder, editOrder, ld, folder);
+        
+        assertNotNull(order);
     }
 
     @Test
