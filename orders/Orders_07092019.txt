@@ -1,2 +1,3 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
 1,Jim's Pizza,MN,5.00,Bamboo,10,2.50,2.25,25.00,22.50,2.38,49.88
+2,Dan's Subs,WI,6.75,Bamboo,100,2.50,2.25,250.00,225.00,32.06,507.06

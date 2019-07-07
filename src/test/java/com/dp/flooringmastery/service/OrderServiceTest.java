@@ -2,7 +2,7 @@ package com.dp.flooringmastery.service;
 
 import com.dp.flooringmastery.data.FileStorageException;
 import com.dp.flooringmastery.data.OrderDao;
-import com.dp.flooringmastery.data.OrderFileDao;
+import com.dp.flooringmastery.data.OrderFileDaoProduction;
 import com.dp.flooringmastery.data.ProductDao;
 import com.dp.flooringmastery.data.ProductFileDao;
 import com.dp.flooringmastery.data.TaxRateDao;
@@ -18,6 +18,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -30,7 +31,7 @@ public class OrderServiceTest {
     private static final String DATA_FILE = "orders-test/Orders_04012019.txt";
     private static final String DATA_FILE_TWO = "orders-test/Orders_04032019.txt";
 
-    OrderDao dao = new OrderFileDao(path);
+    OrderDao dao = new OrderFileDaoProduction(path);
 
     TaxRateDao taxRateDao = new TaxRateFileDao();
     ProductDao productDao = new ProductFileDao();
@@ -48,6 +49,7 @@ public class OrderServiceTest {
 
     @Test
     public void testAddOrder() throws FileStorageException {
+        
         Order newOrder = new Order();
         LocalDate ld = LocalDate.now();
         ld = LocalDate.parse("04012019", DateTimeFormatter.ofPattern("MMddyyyy"));
@@ -62,6 +64,7 @@ public class OrderServiceTest {
 
     @Test
     public void testFindByDate() throws FileStorageException {
+        
         String folder = "orders-test";
         LocalDate ld = LocalDate.now();
         ld = LocalDate.parse("2019-04-01");
@@ -70,9 +73,27 @@ public class OrderServiceTest {
 
         assertEquals(4, testOrders.size());
     }
+    
+    @Test
+    public void testFindByOrderNumberAndEditOrder() 
+            throws FileStorageException, InvalidOrderNumberException {
+        
+        String folder = "orders-test";
+        LocalDate ld = LocalDate.now();
+        ld = LocalDate.parse("2019-04-03");
+        
+        Order origOrder = service.findByOrderNumber(ld, 4, folder);
+        assertNotNull(origOrder);
+        
+        Order editOrder = origOrder;
+        editOrder.setCustomerName("Edited Name!");
+        
+        assertTrue(service.editOrder(origOrder, editOrder, ld, folder));
+    }
 
     @Test
     public void testDeleteOrder() throws FileStorageException {
+        
         String folder = "orders-test";
         LocalDate ld = LocalDate.now();
         ld = LocalDate.parse("2019-04-03");

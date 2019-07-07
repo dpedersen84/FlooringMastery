@@ -24,7 +24,8 @@
     
     <bean id="productDao" class="com.dp.flooringmastery.data.ProductFileDao" />
     <bean id="taxRateDao" class="com.dp.flooringmastery.data.TaxRateFileDao" />
-    <bean id="orderDao" class="com.dp.flooringmastery.data.OrderFileDao" />
+    <bean id="orderDao" class="com.dp.flooringmastery.data.OrderFileDaoProduction" />
+    <!--<bean id="orderDao" class="com.dp.flooringmastery.data.OrderFileDaoTraining" />-->
     
     <bean id="orderService" class="com.dp.flooringmastery.service.OrderService">
         <constructor-arg ref="orderDao" />

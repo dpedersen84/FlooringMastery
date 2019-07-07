@@ -25,7 +25,7 @@ public class OrderDaoTest {
     private static final String DATA_FILE = "orders-test/Orders_04012019.txt";
     private static final String DATA_FILE_TWO = "orders-test/Orders_04032019.txt";
 
-    OrderDao dao = new OrderFileDao(path);
+    OrderDao dao = new OrderFileDaoProduction(path);
     
     TaxRateDao taxRateDao = new TaxRateFileDao();
     ProductDao productDao = new ProductFileDao();

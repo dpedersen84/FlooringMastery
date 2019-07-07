@@ -15,17 +15,17 @@ import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
-public class OrderFileDao implements OrderDao {
+public class OrderFileDaoProduction implements OrderDao {
 
     private final Map<Integer, Order> allOrders = new HashMap<>();
 
     public String path = "orders/";
     public String homeFolder = "orders/";
 
-    public OrderFileDao() {
+    public OrderFileDaoProduction() {
     }
 
-    public OrderFileDao(String path) {
+    public OrderFileDaoProduction(String path) {
         this.path = path;
     }
 
