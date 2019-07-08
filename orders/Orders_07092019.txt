@@ -2,4 +2,5 @@ OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborC
 1,Tim's Pizza,MN,5.00,Bamboo,10,2.50,2.25,25.00,22.50,2.38,49.88
 2,Dan's Pizza,MN,5.00,Bamboo,10,2.50,2.25,25.00,22.50,2.38,49.88
 4,Mike's Pizza,MN,5.00,Slate,100,3.50,3.75,350.00,375.00,36.25,761.25
-5,Test,MN,5.00,Slate,10,3.50,3.75,35.00,37.50,3.63,76.13
+5,Larry's Edited Pizza,MN,5.00,Bamboo,120,2.50,2.25,300.00,270.00,28.50,598.50
+6,William's Pizza,MN,5.00,Bamboo,130,2.50,2.25,325.00,292.50,30.88,648.38

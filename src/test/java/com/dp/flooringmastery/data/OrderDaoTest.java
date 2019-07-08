@@ -174,6 +174,7 @@ public class OrderDaoTest {
         assertTrue(dao.delete(1, formatted));
 
         List<Order> testList = dao.findByDate(formatted);
-        assertEquals(4, testList.size());
+        System.out.println(testList.get(0).getCustomerName());
+        assertEquals(3, testList.size());
     }
 }

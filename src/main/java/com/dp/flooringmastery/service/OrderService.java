@@ -53,17 +53,6 @@ public class OrderService {
         }
 
         String dateAsString = order.getDate().format(DateTimeFormatter.ofPattern("MMddyyyy"));
-
-        // Set orderNumber
-        List<Order> allOrders = orderDao.findByDate(dateAsString);
-        if (allOrders.isEmpty()) {
-            order.setOrderNumber(1);
-        } else {
-            // Find last order
-            Order last = allOrders.get(allOrders.size() - 1);
-
-            order.setOrderNumber(last.getOrderNumber() + 1);
-        }
         
         // Get product information
         Product product = productDao.getProduct(order.getProductType());
