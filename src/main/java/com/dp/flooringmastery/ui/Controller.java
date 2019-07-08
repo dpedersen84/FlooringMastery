@@ -4,6 +4,7 @@ import com.dp.flooringmastery.data.FileStorageException;
 import com.dp.flooringmastery.models.Order;
 import com.dp.flooringmastery.service.InvalidOrderNumberException;
 import com.dp.flooringmastery.service.OrderService;
+import com.dp.flooringmastery.service.Response;
 import com.dp.flooringmastery.service.Result;
 import java.time.LocalDate;
 import java.util.List;
@@ -79,22 +80,32 @@ public class Controller {
     private void editOrder()
             throws FileStorageException, InvalidOrderNumberException {
 
+        Order chosenOrder = null;
+
         view.displayEditOrderBanner();
         LocalDate orderDate = view.getDateInput();
         int orderNumber = view.getOrderNumber();
-        Order chosenOrder = orderService
-                .findByOrderNumber(orderDate, orderNumber);
 
-        view.displayOrder(chosenOrder);
-        Order editedOrder = view.displayEditOrder(chosenOrder);
+        try {
+            chosenOrder = orderService
+                    .findByOrderNumber(orderDate, orderNumber);
 
-        Result<Order> result = orderService
-                .editOrder(chosenOrder, editedOrder, orderDate);
+            view.displayOrder(chosenOrder);
+            Order editedOrder = view.displayEditOrder(chosenOrder);
 
-        if (result.hasError()) {
-            view.displayErrors(result);
-        } else {
-            view.displaySuccess();
+            Result<Order> result = orderService
+                    .editOrder(chosenOrder, editedOrder, orderDate);
+
+            if (result.hasError()) {
+                view.displayErrors(result);
+            } else {
+                view.displaySuccess();
+            }
+
+        } catch (InvalidOrderNumberException e) {
+            Response r = new Response();
+            r.addError(e.getMessage());
+            view.displayErrors(r);
         }
 
     }
@@ -105,15 +116,24 @@ public class Controller {
         view.displayRemoveOrderBanner();
         LocalDate orderDate = view.getDateInput();
         int orderNumber = view.getOrderNumber();
-        Order chosenOrder = orderService
-                .findByOrderNumber(orderDate, orderNumber);
-
-        view.displayOrder(chosenOrder);
-        if (!view.confirm("Would you like to delete this order?")) {
-            return;
+        
+        try {
+            Order chosenOrder = orderService
+                    .findByOrderNumber(orderDate, orderNumber);
+            view.displayOrder(chosenOrder);
+            
+            if (!view.confirm("Would you like to delete this order?")) {
+                return;
+            }
+            
+            orderService.deleteOrder(orderNumber, orderDate);
+            view.displaySuccess();
+            
+        } catch (InvalidOrderNumberException e) {
+            Response r = new Response();
+            r.addError(e.getMessage());
+            view.displayErrors(r);
         }
-        orderService.deleteOrder(orderNumber, orderDate);
-        view.displaySuccess();
     }
 
     private void unknownCommand() {
