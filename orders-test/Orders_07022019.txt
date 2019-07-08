@@ -17,3 +17,5 @@ OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborC
 115,Test Company,MN,5.00,Bamboo,10.00,2.50,2.25,25.00,22.50,2.38,49.88
 116,Test Company,MN,5.00,Bamboo,10.00,2.50,2.25,25.00,22.50,2.38,49.88
 117,Test Company,MN,5.00,Bamboo,10.00,2.50,2.25,25.00,22.50,2.38,49.88
+118,Test Company,MN,5.00,Bamboo,10.00,2.50,2.25,25.00,22.50,2.38,49.88
+119,Test Company,MN,5.00,Bamboo,10.00,2.50,2.25,25.00,22.50,2.38,49.88

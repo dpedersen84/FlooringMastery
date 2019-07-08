@@ -6,15 +6,13 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.math.BigDecimal;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Collectors;
 
 public class OrderFileDaoTraining implements OrderDao {
 
-    private final Map<Integer, Order> allOrders = new HashMap<>();
+    private List<Order> listOfOrders = new ArrayList<>();
     public String path;
     public String folder;
 
@@ -24,32 +22,47 @@ public class OrderFileDaoTraining implements OrderDao {
 
     @Override
     public List<Order> findByDate(String date) {
-        try {
-            loadDatabase(date);
-        } catch (FileStorageException ex) {
-            return new ArrayList<>();
+        // clear orders from previous date if needed
+        listOfOrders.clear();
+        
+        if (listOfOrders.isEmpty()) {
+            try {
+                loadDatabase(date);
+            } catch (FileStorageException ex) {
+                return new ArrayList<>();
+            }
         }
-        return allOrders.values().stream().collect(Collectors.toList());
+        return listOfOrders.stream().collect(Collectors.toList());
     }
 
     @Override
     public void add(Order order, String date)
             throws FileStorageException {
 
-        List<Order> orders = findByDate(date);
+        listOfOrders = findByDate(date);
 
-        orders.add(order);
+        // Set orderNumber
+        if (listOfOrders.isEmpty()) {
+            order.setOrderNumber(1);
+        } else {
+            // Find last order
+            Order last = listOfOrders.get(listOfOrders.size() - 1);
+
+            order.setOrderNumber(last.getOrderNumber() + 1);
+        }
+
+        listOfOrders.add(order);
     }
 
     @Override
     public boolean edit(Order order, Order editedOrder, String date)
             throws FileStorageException {
 
-        List<Order> orders = findByDate(date);
+        listOfOrders = findByDate(date);
 
-        for (int i = 0; i < orders.size(); i++) {
-            if (orders.get(i).getOrderNumber() == order.getOrderNumber()) {
-                orders.set(i, editedOrder);
+        for (int i = 0; i < listOfOrders.size(); i++) {
+            if (listOfOrders.get(i).getOrderNumber() == order.getOrderNumber()) {
+                listOfOrders.set(i, editedOrder);
                 return true;
             }
         }
@@ -59,11 +72,12 @@ public class OrderFileDaoTraining implements OrderDao {
     @Override
     public boolean delete(int orderNumber, String date)
             throws FileStorageException {
-        List<Order> orders = findByDate(date);
 
-        for (int i = 0; i < orders.size(); i++) {
-            if (orders.get(i).getOrderNumber() == orderNumber) {
-                orders.remove(i);
+        listOfOrders = findByDate(date);
+
+        for (int i = 0; i < listOfOrders.size(); i++) {
+            if (listOfOrders.get(i).getOrderNumber() == orderNumber) {
+                listOfOrders.remove(i);
                 return true;
             }
         }
@@ -111,7 +125,7 @@ public class OrderFileDaoTraining implements OrderDao {
             currentLine = scanner.nextLine();
             currentOrder = mapToOrder(currentLine);
 
-            allOrders.put(currentOrder.getOrderNumber(), currentOrder);
+            listOfOrders.add(currentOrder);
         }
         scanner.close();
     }
