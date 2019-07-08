@@ -51,7 +51,7 @@ public class Controller {
         } catch (FileStorageException | InvalidOrderNumberException e) {
             view.displayErrorMessage(e.getMessage());
         }
-            
+
     }
 
     private int getMenuSelection() {
@@ -61,14 +61,14 @@ public class Controller {
     private void displayOrders() throws FileStorageException {
         view.displayDisplayOrdersBanner();
         LocalDate orderDate = view.getDateInput();
-        List<Order> orders = orderService.findByDate(orderDate, "orders");
+        List<Order> orders = orderService.findByDate(orderDate);
         view.displayOrders(orders);
     }
 
     private void addOrder() throws FileStorageException {
         view.displayAddOrderBanner();
         Order newOrder = view.createOrder();
-        Result<Order> result = orderService.addOrder(newOrder, "orders");
+        Result<Order> result = orderService.addOrder(newOrder);
         if (result.hasError()) {
             view.displayErrors(result);
         } else {
@@ -76,46 +76,46 @@ public class Controller {
         }
     }
 
-    private void editOrder() 
+    private void editOrder()
             throws FileStorageException, InvalidOrderNumberException {
-        
+
         view.displayEditOrderBanner();
         LocalDate orderDate = view.getDateInput();
         int orderNumber = view.getOrderNumber();
         Order chosenOrder = orderService
-                .findByOrderNumber(orderDate, orderNumber, "orders");
-        
+                .findByOrderNumber(orderDate, orderNumber);
+
         view.displayOrder(chosenOrder);
         Order editedOrder = view.displayEditOrder(chosenOrder);
-        
+
         Result<Order> result = orderService
-                .editOrder(chosenOrder, editedOrder, orderDate, "orders");
-        
-        if(result.hasError()) {
-           view.displayErrors(result);
+                .editOrder(chosenOrder, editedOrder, orderDate);
+
+        if (result.hasError()) {
+            view.displayErrors(result);
         } else {
             view.displaySuccess();
         }
-        
+
     }
 
-    private void removeOrder() 
+    private void removeOrder()
             throws FileStorageException, InvalidOrderNumberException {
-        
+
         view.displayRemoveOrderBanner();
         LocalDate orderDate = view.getDateInput();
         int orderNumber = view.getOrderNumber();
         Order chosenOrder = orderService
-                .findByOrderNumber(orderDate, orderNumber, "orders");
-        
+                .findByOrderNumber(orderDate, orderNumber);
+
         view.displayOrder(chosenOrder);
         if (!view.confirm("Would you like to delete this order?")) {
             return;
-        } 
-        orderService.deleteOrder(orderNumber, orderDate, "orders");
+        }
+        orderService.deleteOrder(orderNumber, orderDate);
         view.displaySuccess();
     }
-    
+
     private void unknownCommand() {
         view.displayUnknownCommandBanner();
     }

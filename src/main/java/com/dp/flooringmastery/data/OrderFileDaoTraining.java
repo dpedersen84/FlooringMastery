@@ -15,31 +15,17 @@ import java.util.stream.Collectors;
 public class OrderFileDaoTraining implements OrderDao {
 
     private final Map<Integer, Order> allOrders = new HashMap<>();
+    public String path;
+    public String folder;
 
-    public String path = "orders/";
-    public String homeFolder = "orders/";
-
-    public OrderFileDaoTraining() {
-    }
-
-    public OrderFileDaoTraining(String path) {
-        this.path = path;
+    public OrderFileDaoTraining(String folder) {
+        this.folder = folder;
     }
 
     @Override
-    public void add(Order order, String date, String folder)
-            throws FileStorageException {
-
-        List<Order> orders = findByDate(date, folder);
-
-        orders.add(order);
-    }
-
-    @Override
-    public List<Order> findByDate(String date, String folder) {
+    public List<Order> findByDate(String date) {
         try {
-            loadDatabase(folder, date);
-//            loadDatabase(path, date);
+            loadDatabase(date);
         } catch (FileStorageException ex) {
             return new ArrayList<>();
         }
@@ -47,10 +33,19 @@ public class OrderFileDaoTraining implements OrderDao {
     }
 
     @Override
-    public boolean edit(Order order, Order editedOrder, String date, String folder)
+    public void add(Order order, String date)
             throws FileStorageException {
 
-        List<Order> orders = this.findByDate(date, folder);
+        List<Order> orders = findByDate(date);
+
+        orders.add(order);
+    }
+
+    @Override
+    public boolean edit(Order order, Order editedOrder, String date)
+            throws FileStorageException {
+
+        List<Order> orders = findByDate(date);
 
         for (int i = 0; i < orders.size(); i++) {
             if (orders.get(i).getOrderNumber() == order.getOrderNumber()) {
@@ -62,10 +57,9 @@ public class OrderFileDaoTraining implements OrderDao {
     }
 
     @Override
-    public boolean delete(int orderNumber, String date, String folder)
+    public boolean delete(int orderNumber, String date)
             throws FileStorageException {
-        List<Order> orders = this.findByDate(date, folder);
-//        List<Order> orders = this.findByDate(date, path);
+        List<Order> orders = findByDate(date);
 
         for (int i = 0; i < orders.size(); i++) {
             if (orders.get(i).getOrderNumber() == orderNumber) {
@@ -96,12 +90,11 @@ public class OrderFileDaoTraining implements OrderDao {
         return order;
     }
 
-    private void loadDatabase(String folder, String date)
+    private void loadDatabase(String date)
             throws FileStorageException {
         Scanner scanner;
 
         path = String.format("%s/Orders_%s.txt", folder, date);
-//        path = String.format("%s/Orders_%s.txt", path , date);
 
         try {
             scanner = new Scanner(new BufferedReader(new FileReader(path)));

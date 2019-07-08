@@ -25,7 +25,7 @@ import org.junit.jupiter.api.Test;
 
 public class OrderServiceTest {
 
-    String path = "orders-test/";
+    String path = "orders-test";
 
     private static final String SEED_FILE = "orders-test/test-seed.txt";
     private static final String DATA_FILE = "orders-test/Orders_04012019.txt";
@@ -60,7 +60,7 @@ public class OrderServiceTest {
         newOrder.setProductType("Slate");
         newOrder.setArea(new BigDecimal("100.00"));
         
-        Result<Order> order = service.addOrder(newOrder, "orders-test");
+        Result<Order> order = service.addOrder(newOrder);
         
         assertNotNull(order);
     }
@@ -68,41 +68,41 @@ public class OrderServiceTest {
     @Test
     public void testFindByDate() throws FileStorageException {
         
-        String folder = "orders-test";
         LocalDate ld = LocalDate.now();
-        ld = LocalDate.parse("2019-04-01");
+        ld = LocalDate.parse("2019-04-02");
 
-        List<Order> testOrders = service.findByDate(ld, folder);
+        List<Order> testOrders = service.findByDate(ld);
 
-        assertEquals(4, testOrders.size());
+        assertEquals(12, testOrders.size());
     }
     
     @Test
     public void testFindByOrderNumberAndEditOrder() 
             throws FileStorageException, InvalidOrderNumberException {
         
-        String folder = "orders-test";
         LocalDate ld = LocalDate.now();
         ld = LocalDate.parse("2019-04-03");
         
-        Order origOrder = service.findByOrderNumber(ld, 4, folder);
+        Order origOrder = service.findByOrderNumber(ld, 4);
+        assertEquals("Barrows Langosh and Fisher", origOrder.getCustomerName());
         assertNotNull(origOrder);
         
-        Order editOrder = origOrder;
-        editOrder.setCustomerName("Edited Name!");
+        Order editOrder = new Order();
+        editOrder.setCustomerName("Edited! Name!");
         
-        Result<Order> order = service.editOrder(origOrder, editOrder, ld, folder);
+        service.editOrder(origOrder, editOrder, ld);
         
-        assertNotNull(order);
+        Order newOrder = service.findByOrderNumber(ld, 4);
+        
+        assertEquals("Edited! Name!", newOrder.getCustomerName());
     }
 
     @Test
     public void testDeleteOrder() throws FileStorageException {
         
-        String folder = "orders-test";
         LocalDate ld = LocalDate.now();
         ld = LocalDate.parse("2019-04-03");
         
-        assertTrue(service.deleteOrder(1, ld, folder));
+        assertTrue(service.deleteOrder(1, ld));
     }
 }

@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,Solar,MN,5.00,Bamboo,1000,2.50,2.25,2500.00,2250.00,237.50,4987.50

@@ -129,7 +129,7 @@ public class View {
     }
 
     void displayOrder(Order o) {
-        io.print(String.format("Customer Name: %s", o.getCustomerName()));
+        io.print(String.format("%s. %s", o.getOrderNumber(), o.getCustomerName()));
         io.print(String.format("State: %s", o.getState()));
         io.print(String.format("Area: %s", o.getArea().toString()));
         io.print(String.format("Product: %s", o.getProductType()));

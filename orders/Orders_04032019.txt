@@ -1,8 +1,4 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-13,Rutherford Inc,ND,2.50,Sisal Carpet,1850.00,2.75,3.75,5087.50,6937.50,300.63,12325.63
-14,Quitzon Group,ND,2.50,Bamboo,1975.00,2.50,2.25,4937.50,4443.75,234.53,9615.78
-15,Lubowitz-Gleichner,ND,2.50,Bamboo,1850.00,2.50,2.25,4625.00,4162.50,219.69,9007.19
-16,Huel Hegmann and McClure,IA,6.50,Shag Carpet,2100.00,2.00,4.25,4200.00,8925.00,853.13,13978.13
-17,Smitham Group,NE,2.50,Parquet,350.00,2.25,4.75,787.50,1662.50,61.25,2511.25
-18,Sauer-Schinner,SD,2.50,Ceramic Tile,100.00,3.00,4.25,300.00,425.00,18.13,743.13
-19,Beier-Mosciski,WI,6.75,Marble,850.00,4.50,4.00,3825.00,3400.00,487.69,7712.69
+2,Prosacco-Jaskolski,ND,3.3,Sisal Carpet,2475.00,2.75,3.75,6806.25,9281.25,522.84,16610.34
+3,Hettinger-Baumbach,MN,4.8,Slate,475.00,4.25,4.75,2018.75,2256.25,203.06,4478.06
+4,Barrows Langosh and Fisher,SD,6.0,Bamboo,475.00,2.75,4.25,1306.25,2018.75,199.50,3524.50

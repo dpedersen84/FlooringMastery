@@ -1,4 +1,4 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
 2,Prosacco-Jaskolski,ND,3.3,Sisal Carpet,2475.00,2.75,3.75,6806.25,9281.25,522.84,16610.34
 3,Hettinger-Baumbach,MN,4.8,Slate,475.00,4.25,4.75,2018.75,2256.25,203.06,4478.06
-4,Edited Name!,SD,2.50,Bamboo,475.00,2.50,2.25,1187.50,1068.75,56.41,2312.66
+4,Barrows Langosh and Fisher,SD,6.0,Bamboo,475.00,2.75,4.25,1306.25,2018.75,199.50,3524.50

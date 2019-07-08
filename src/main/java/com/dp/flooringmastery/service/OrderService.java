@@ -24,7 +24,7 @@ public class OrderService {
         this.taxRateDao = taxRateDao;
     }
 
-    public Result<Order> addOrder(Order order, String folder)
+    public Result<Order> addOrder(Order order)
             throws FileStorageException {
         Result<Order> result = new Result<>();
 
@@ -55,7 +55,7 @@ public class OrderService {
         String dateAsString = order.getDate().format(DateTimeFormatter.ofPattern("MMddyyyy"));
 
         // Set orderNumber
-        List<Order> allOrders = orderDao.findByDate(dateAsString, folder);
+        List<Order> allOrders = orderDao.findByDate(dateAsString);
         if (allOrders.isEmpty()) {
             order.setOrderNumber(1);
         } else {
@@ -64,7 +64,7 @@ public class OrderService {
 
             order.setOrderNumber(last.getOrderNumber() + 1);
         }
-
+        
         // Get product information
         Product product = productDao.getProduct(order.getProductType());
 
@@ -98,7 +98,7 @@ public class OrderService {
         order.setTotal(total);
 
         try {
-            orderDao.add(order, dateAsString, folder);
+            orderDao.add(order, dateAsString);
             result.setValue(order);
         } catch (FileStorageException ex) {
             result.addError(ex.getMessage());
@@ -107,22 +107,22 @@ public class OrderService {
         return result;
     }
 
-    public List<Order> findByDate(LocalDate date, String folder)
+    public List<Order> findByDate(LocalDate date)
             throws FileStorageException {
 
         String dateAsString = date.format(DateTimeFormatter
                 .ofPattern("MMddyyyy"));
 
-        return orderDao.findByDate(dateAsString, folder);
+        return orderDao.findByDate(dateAsString);
     }
 
-    public Order findByOrderNumber(LocalDate date, int orderNumber, String folder)
+    public Order findByOrderNumber(LocalDate date, int orderNumber)
             throws FileStorageException, InvalidOrderNumberException {
 
         String dateAsString = date.format(DateTimeFormatter
                 .ofPattern("MMddyyyy"));
 
-        List<Order> ordersByDate = orderDao.findByDate(dateAsString, folder);
+        List<Order> ordersByDate = orderDao.findByDate(dateAsString);
 
         Order chosenOrder = ordersByDate.stream().filter(o
                 -> o.getOrderNumber() == orderNumber).findFirst().orElse(null);
@@ -134,29 +134,29 @@ public class OrderService {
         }
     }
 
-    public Result<Order> editOrder(Order oldOrder, Order newOrder, LocalDate date, String folder)
+    public Result<Order> editOrder(Order oldOrder, Order newOrder, LocalDate date)
             throws FileStorageException {
 
         Result<Order> result = new Result<>();
 
         String dateAsString = date.format(DateTimeFormatter.ofPattern("MMddyyyy"));
 
-        if (newOrder.getCustomerName() == null 
+        if (newOrder.getCustomerName() == null
                 || newOrder.getCustomerName().equals("")) {
             newOrder.setCustomerName(oldOrder.getCustomerName());
         }
 
-        if (newOrder.getState() == null 
+        if (newOrder.getState() == null
                 || newOrder.getState().equals("")) {
             newOrder.setState(oldOrder.getState());
         }
 
-        if (newOrder.getProductType() == null 
+        if (newOrder.getProductType() == null
                 || newOrder.getProductType().equals("")) {
             newOrder.setProductType(oldOrder.getProductType());
         }
 
-        if (newOrder.getArea() == null 
+        if (newOrder.getArea() == null
                 || newOrder.getArea().compareTo(BigDecimal.ZERO) == 0) {
             newOrder.setArea(oldOrder.getArea());
         }
@@ -208,7 +208,7 @@ public class OrderService {
         newOrder.setTotal(total);
 
         try {
-            orderDao.edit(oldOrder, newOrder, dateAsString, folder);
+            orderDao.edit(oldOrder, newOrder, dateAsString);
             result.setValue(newOrder);
         } catch (FileStorageException ex) {
             result.addError(ex.getMessage());
@@ -216,11 +216,11 @@ public class OrderService {
         return result;
     }
 
-    public boolean deleteOrder(int orderNumber, LocalDate date, String folder)
+    public boolean deleteOrder(int orderNumber, LocalDate date)
             throws FileStorageException {
 
         String dateAsString = date.format(DateTimeFormatter.ofPattern("MMddyyyy"));
 
-        return orderDao.delete(orderNumber, dateAsString, folder);
+        return orderDao.delete(orderNumber, dateAsString);
     }
 }

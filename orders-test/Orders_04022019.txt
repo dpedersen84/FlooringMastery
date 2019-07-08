@@ -1,0 +1,13 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,Feil Ullrich and Barrows,MN,5.00,Slate,350.00,3.50,3.75,1225.00,1312.50,126.88,2664.38
+2,Schowalter Ortiz and Rice,MI,5.25,Subway Tile,2475.00,2.75,5.50,6806.25,13612.50,1071.98,21490.73
+3,Ondricka-Hettinger,IL,2.50,Plank,1850.00,2.50,4.25,4625.00,7862.50,312.19,12799.69
+4,Wolf Inc,NE,2.50,Frieze Carpet,350.00,4.25,3.00,1487.50,1050.00,63.44,2600.94
+5,Prosacco LLC,SD,2.50,Cork,1975.00,3.25,4.75,6418.75,9381.25,395.00,16195.00
+6,Wilderman Grant and Beier,MN,5.00,Subway Tile,1475.00,2.75,5.50,4056.25,8112.50,608.44,12777.19
+7,Schiller Gutkowski and Cruickshank,WI,6.75,Shag Carpet,1475.00,2.00,4.25,2950.00,6268.75,622.27,9841.02
+8,Jacobson and Sons,ND,2.50,Ceramic Tile,2475.00,3.00,4.25,7425.00,10518.75,448.59,18392.34
+9,Howe-Hodkiewicz,MI,5.25,Parquet,3100.00,2.25,4.75,6975.00,14725.00,1139.25,22839.25
+10,Rice Lehner and Brown,WI,6.75,Ceramic Tile,2475.00,3.00,4.25,7425.00,10518.75,1211.20,19154.95
+11,Johnson-O'Kon,MN,5.00,Linoleum,2225.00,1.75,4.00,3893.75,8900.00,639.69,13433.44
+12,Spinka LLC,WI,6.75,Seamless Resin,350.00,2.75,2.75,962.50,962.50,129.94,2054.94

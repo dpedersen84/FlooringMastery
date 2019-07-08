@@ -18,15 +18,12 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.BeforeAll;
 
 public class OrderDaoTest {
-
-    String path = "orders-test/";
     
     private static final String SEED_FILE = "orders-test/test-seed.txt";
     private static final String DATA_FILE = "orders-test/Orders_04012019.txt";
     private static final String DATA_FILE_TWO = "orders-test/Orders_04032019.txt";
 
-    OrderDao dao = new OrderFileDaoProduction(path);
-    
+    OrderDao dao = new OrderFileDaoProduction("orders-test/");
     TaxRateDao taxRateDao = new TaxRateFileDao();
     ProductDao productDao = new ProductFileDao();
 
@@ -42,7 +39,6 @@ public class OrderDaoTest {
     @Test
     public void testAdd() throws FileStorageException {
         Order testOrder = new Order();
-        testOrder.setOrderNumber(99);
         testOrder.setCustomerName("Test Company");
 
         TaxRate testTaxRate = taxRateDao.getTaxRate("MN");
@@ -85,7 +81,7 @@ public class OrderDaoTest {
         ld = LocalDate.parse(isoDate);
         String formatted = ld.format(DateTimeFormatter.ofPattern("MMddyyyy"));
         
-        dao.add(testOrder, formatted, "orders-test");
+        dao.add(testOrder, formatted);
     }
 
     @Test
@@ -97,7 +93,7 @@ public class OrderDaoTest {
         ld = LocalDate.parse(isoDate);
         String formatted = ld.format(DateTimeFormatter.ofPattern("MMddyyyy"));
         
-        List<Order> testList = dao.findByDate(formatted, "orders-test");
+        List<Order> testList = dao.findByDate(formatted);
 
         assertEquals(4, testList.size());
     }
@@ -106,7 +102,7 @@ public class OrderDaoTest {
     public void testEditOrder() throws FileStorageException {
         Order orderOne = new Order();
         orderOne.setOrderNumber(1);
-        orderOne.setCustomerName("Test Company Edit");
+        orderOne.setCustomerName("Test Company");
 
         TaxRate testTaxRate = taxRateDao.getTaxRate("WI");
         String testState = testTaxRate.getState();
@@ -141,10 +137,10 @@ public class OrderDaoTest {
         testTotal = testTotal.setScale(2, RoundingMode.HALF_DOWN);
         orderOne.setTotal(testTotal);
         
-        // edited order with only edited name
+        // edited name
         Order orderTwo = new Order();
         orderTwo.setOrderNumber(1);
-        orderTwo.setCustomerName("Name has been edited!");
+        orderTwo.setCustomerName("Name has been edited again!");
         orderTwo.setState(testState);
         orderTwo.setTaxRate(testRate);
         orderTwo.setProductType(testProduct.getName());
@@ -163,7 +159,7 @@ public class OrderDaoTest {
         ld = LocalDate.parse(isoDate);
         String formatted = ld.format(DateTimeFormatter.ofPattern("MMddyyyy"));
  
-        assertTrue(dao.edit(orderOne, orderTwo, formatted, "orders-test"));
+        assertTrue(dao.edit(orderOne, orderTwo, formatted));
     }
 
     @Test
@@ -175,9 +171,9 @@ public class OrderDaoTest {
         ld = LocalDate.parse(isoDate);
         String formatted = ld.format(DateTimeFormatter.ofPattern("MMddyyyy"));
         
-        assertTrue(dao.delete(1, formatted, "orders-test"));
+        assertTrue(dao.delete(1, formatted));
 
-//        List<Order> testList = dao.findByDate(formatted, "orders-test");
-//        assertEquals(3, testList.size());
+        List<Order> testList = dao.findByDate(formatted);
+        assertEquals(4, testList.size());
     }
 }
