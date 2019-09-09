@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+1,Acme Inc.,MN,5.00,Marble,-99,4.50,4.00,-445.50,-396.00,-42.08,-883.58
